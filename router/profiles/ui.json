@@ -1,0 +1,15 @@
+{
+  "name": "ui",
+  "description": "Visual dashboard mode — full metrics display, charts-first layout, no cleanup suggestions",
+  "collectors": ["cpu_memory", "disk_storage", "startup_apps", "security"],
+  "disk_large_file_patterns": [],
+  "analyzer_focus": "Provide a comprehensive system health summary suitable for a visual dashboard. Do not suggest cleanup actions. Focus on health score accuracy and clear status descriptions for each metric. Describe trends and overall system state in plain language.",
+  "dashboard_layout": {
+    "primary_section": "charts",
+    "show_security": true,
+    "show_startup": true,
+    "show_network": true,
+    "chart_emphasis": "all",
+    "hide_suggestions": true
+  }
+}

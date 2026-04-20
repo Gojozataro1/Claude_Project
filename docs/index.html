@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>macOS AI Ops Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --green: #22c55e; --yellow: #eab308; --red: #ef4444;
+      --bg: #0f172a; --surface: #1e293b; --border: #334155;
+      --text: #f1f5f9; --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 1.5rem; }
+    h1 { font-size: 1.5rem; font-weight: 700; }
+    h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    h3 { font-size: 0.95rem; font-weight: 600; color: var(--muted); margin-bottom: 0.25rem; }
+
+    .header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .mode-badge { padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;
+      background: #3b82f620; color: #60a5fa; border: 1px solid #3b82f640; }
+    .timestamp { font-size: 0.8rem; color: var(--muted); margin-left: auto; }
+
+    .health-score { display: flex; align-items: center; gap: 0.5rem; }
+    .score-circle { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 800; border: 3px solid;
+      border-color: var(--yellow); color: var(--yellow);
+       }
+
+    .grid { display: grid; gap: 1rem; margin-bottom: 2rem; }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    .card.green { border-left: 3px solid var(--green); }
+    .card.yellow { border-left: 3px solid var(--yellow); }
+    .card.red { border-left: 3px solid var(--red); }
+
+    .metric-value { font-size: 2rem; font-weight: 800; line-height: 1; margin: 0.5rem 0; }
+    .metric-value.green { color: var(--green); }
+    .metric-value.yellow { color: var(--yellow); }
+    .metric-value.red { color: var(--red); }
+    .metric-sub { font-size: 0.8rem; color: var(--muted); }
+
+    .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    canvas { max-height: 220px; }
+
+    .suggestion-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem;
+      padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+    .suggestion-card.critical { border-left: 4px solid var(--red); }
+    .suggestion-card.warning { border-left: 4px solid var(--yellow); }
+    .suggestion-card.info { border-left: 4px solid #60a5fa; }
+
+    .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; margin-right: 0.4rem; }
+    .badge-critical { background: #ef444420; color: var(--red); }
+    .badge-warning { background: #eab30820; color: var(--yellow); }
+    .badge-info { background: #3b82f620; color: #60a5fa; }
+    .badge-cat { background: #33415520; color: var(--muted); }
+
+    .suggestion-title { font-weight: 600; font-size: 0.95rem; margin: 0.4rem 0 0.3rem; }
+    .suggestion-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .suggestion-action { font-family: "SF Mono", "Fira Code", monospace; font-size: 0.8rem;
+      background: #0f172a; padding: 0.4rem 0.75rem; border-radius: 6px; display: block;
+      margin-bottom: 0.4rem; color: #a5f3fc; overflow-x: auto; white-space: pre-wrap; }
+    .suggestion-impact { font-size: 0.78rem; color: var(--muted); }
+
+    .process-table, .port-table, .agent-table, .file-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .process-table th, .port-table th, .agent-table th, .file-table th {
+      text-align: left; padding: 0.4rem 0.5rem; color: var(--muted); border-bottom: 1px solid var(--border); font-weight: 500; }
+    .process-table td, .port-table td, .agent-table td, .file-table td {
+      padding: 0.35rem 0.5rem; border-bottom: 1px solid #1e293b80; }
+    .process-table tr:hover td, .port-table tr:hover td { background: #33415520; }
+
+    .post-check-banner { padding: 1rem 1.5rem; border-radius: 0.75rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem; }
+    .post-check-banner.clear { background: #22c55e15; border: 1px solid #22c55e40; color: var(--green); }
+    .post-check-banner.issues { background: #ef444415; border: 1px solid #ef444440; color: var(--red); }
+    .check-row { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+    .check-pass { color: var(--green); font-weight: 600; }
+    .check-fail { color: var(--red); font-weight: 600; }
+
+    .section { margin-bottom: 2.5rem; }
+    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); display: flex; gap: 2rem; flex-wrap: wrap; }
+    .tag { display: inline-block; padding: 0.15rem 0.5rem; background: var(--border); border-radius: 4px; font-size: 0.75rem; margin-right: 0.3rem; }
+
+    @media (max-width: 640px) { .grid-4 { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>macOS AI Ops Dashboard</h1>
+  <span class="mode-badge">ALL MODE</span>
+  <div class="health-score">
+    <div class="score-circle">50</div>
+    <div>
+      <div style="font-weight:600;">Health Score</div>
+      <div class="metric-sub">out of 100</div>
+    </div>
+  </div>
+  <div class="timestamp">
+    <div>Mac.domain.name</div>
+    <div>26.3.1</div>
+    <div>Scanned: 2026-04-20T18:20:49.431106+00:00</div>
+  </div>
+</div>
+
+<!-- Post-Cleanup Check Banner -->
+
+
+<!-- AI Summary -->
+
+<div class="section">
+  <div class="card" style="border-left: 3px solid #60a5fa;">
+    <h3 style="color:#60a5fa; margin-bottom:0.5rem;">AI Analysis Summary</h3>
+    <p style="font-size:0.9rem; line-height:1.6; color:var(--text);">AI analysis skipped (no_ai=True).</p>
+  </div>
+</div>
+
+
+<!-- Metric Cards -->
+<div class="section">
+  <h2>System Metrics</h2>
+  <div class="grid grid-4">
+    <div class="card green">
+      <h3>CPU Usage</h3>
+      <div class="metric-value green">8.4%</div>
+      <div class="metric-sub">10 cores · Load 2.0</div>
+    </div>
+    <div class="card yellow">
+      <h3>Memory</h3>
+      <div class="metric-value yellow">77.3%</div>
+      <div class="metric-sub">5.45GB / 17.18GB used</div>
+    </div>
+    <div class="card green">
+      <h3>Disk (Root)</h3>
+      <div class="metric-value green">7.5%</div>
+      <div class="metric-sub">12.46GB / 245.11GB</div>
+    </div>
+    <div class="card green">
+      <h3>Swap</h3>
+      <div class="metric-value green">0.0%</div>
+      <div class="metric-sub">0.0GB / 0.0GB</div>
+    </div>
+  </div>
+</div>
+
+<!-- Charts -->
+<div class="section">
+  <h2>Resource Charts</h2>
+  <div class="grid grid-3">
+    <div class="chart-card">
+      <h3>CPU per Core</h3>
+      <canvas id="cpuChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Memory Breakdown</h3>
+      <canvas id="memChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Disk Usage</h3>
+      <canvas id="diskChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Storage Details -->
+<div class="section">
+  <h2>Storage Details</h2>
+  <div class="grid grid-4">
+    <div class="card green">
+      <h3>Cache</h3>
+      <div class="metric-value green">2.9GB</div>
+      <div class="metric-sub">~/Library/Caches</div>
+    </div>
+    <div class="card green">
+      <h3>Trash</h3>
+      <div class="metric-value green">0.0MB</div>
+      <div class="metric-sub">~/.Trash</div>
+    </div>
+    <div class="card">
+      <h3>Downloads</h3>
+      <div class="metric-value">0.74GB</div>
+      <div class="metric-sub">1 files untouched 90+ days</div>
+    </div>
+    <div class="card">
+      <h3>Large Files</h3>
+      <div class="metric-value">0</div>
+      <div class="metric-sub">Files &gt; 500MB found</div>
+    </div>
+  </div>
+</div>
+
+<!-- Security -->
+
+<div class="section">
+  <h2>Security Overview</h2>
+  <div class="grid grid-4">
+    <div class="card green">
+      <h3>System Integrity (SIP)</h3>
+      <div class="metric-value green" style="font-size:1.2rem;">Enabled</div>
+    </div>
+    <div class="card green">
+      <h3>FileVault Encryption</h3>
+      <div class="metric-value green" style="font-size:1.2rem;">Enabled</div>
+    </div>
+    <div class="card yellow">
+      <h3>Exposed Sensitive Files</h3>
+      <div class="metric-value yellow">1</div>
+      <div class="metric-sub">World-readable credentials</div>
+    </div>
+    <div class="card green">
+      <h3>Open Listening Ports</h3>
+      <div class="metric-value green">0</div>
+      <div class="metric-sub">LISTEN state</div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+<!-- Startup & Background -->
+
+<div class="section">
+  <h2>Startup &amp; Background</h2>
+  <div class="grid grid-3" style="margin-bottom:1rem;">
+    <div class="card green">
+      <h3>Launch Agents</h3>
+      <div class="metric-value green">3</div>
+      <div class="metric-sub">User LaunchAgents loaded</div>
+    </div>
+    <div class="card green">
+      <h3>Background Processes</h3>
+      <div class="metric-value green">30</div>
+      <div class="metric-sub">No terminal attached</div>
+    </div>
+    <div class="card yellow">
+      <h3>High-CPU Background</h3>
+      <div class="metric-value yellow">1</div>
+      <div class="metric-sub">Processes &gt; 5% CPU</div>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <h3 style="margin-bottom:0.75rem;">Top Processes by CPU</h3>
+    <table class="process-table">
+      <thead><tr><th>Name</th><th>PID</th><th>CPU %</th><th>Mem %</th><th>Status</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td><strong>kernel_task</strong></td>
+          <td style="color:var(--muted);">0</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">idle</td>
+        </tr>
+        
+        <tr>
+          <td><strong>launchd</strong></td>
+          <td style="color:var(--muted);">1</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+        <tr>
+          <td><strong>logd</strong></td>
+          <td style="color:var(--muted);">317</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+        <tr>
+          <td><strong>smd</strong></td>
+          <td style="color:var(--muted);">318</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+        <tr>
+          <td><strong>UserEventAgent</strong></td>
+          <td style="color:var(--muted);">319</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+        <tr>
+          <td><strong>fseventsd</strong></td>
+          <td style="color:var(--muted);">321</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+        <tr>
+          <td><strong>mediaremoted</strong></td>
+          <td style="color:var(--muted);">322</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+        <tr>
+          <td><strong>systemstats</strong></td>
+          <td style="color:var(--muted);">325</td>
+          <td style="color:var(--text);">0%</td>
+          <td>0%</td>
+          <td style="color:var(--muted);">sleeping</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+  
+</div>
+
+
+<!-- AI Suggestions -->
+
+
+<!-- Post-Check Details -->
+
+
+<!-- Footer -->
+<div class="footer">
+  <span>macOS AI Ops Dashboard</span>
+  <span>AI: none</span>
+  
+  <span>Generated: 2026-04-20T18:20:49.431106+00:00</span>
+</div>
+
+<script>
+const CHART_COLORS = { green: '#22c55e', yellow: '#eab308', red: '#ef4444', blue: '#60a5fa', muted: '#475569' };
+
+// CPU per-core bar chart
+const cpuData = {"labels": ["Core 1", "Core 2", "Core 3", "Core 4", "Core 5", "Core 6", "Core 7", "Core 8", "Core 9", "Core 10"], "values": [25.0, 22.0, 12.9, 8.9, 5.0, 2.0, 3.0, 2.0, 1.0, 2.0]};
+new Chart(document.getElementById('cpuChart'), {
+  type: 'bar',
+  data: {
+    labels: cpuData.labels,
+    datasets: [{
+      label: 'CPU %',
+      data: cpuData.values,
+      backgroundColor: cpuData.values.map(v => v > 85 ? CHART_COLORS.red : v > 60 ? CHART_COLORS.yellow : CHART_COLORS.green),
+      borderRadius: 4,
+    }]
+  },
+  options: { plugins: { legend: { display: false } }, scales: { y: { max: 100, ticks: { color: '#94a3b8' }, grid: { color: '#334155' } }, x: { ticks: { color: '#94a3b8' }, grid: { display: false } } } }
+});
+
+// Memory doughnut
+const memData = {"labels": ["Used", "Available", "Swap Used"], "values": [5.45, 3.89, 0.0]};
+new Chart(document.getElementById('memChart'), {
+  type: 'doughnut',
+  data: {
+    labels: memData.labels,
+    datasets: [{ data: memData.values, backgroundColor: [CHART_COLORS.blue, CHART_COLORS.muted, CHART_COLORS.yellow], borderWidth: 0 }]
+  },
+  options: { plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } }, cutout: '65%' }
+});
+
+// Disk stacked bar
+const diskData = {"free": [154.33, 154.33, 154.33, 154.33, 0.51], "labels": ["/", "/System/Volumes/VM", "/System/Volumes/Preboot", "/System/Volumes/Update", "/System/Volumes/xarts"], "pct": [7.5, 0.0, 5.4, 0.0, 1.2], "used": [12.46, 0.0, 8.85, 0.01, 0.01]};
+new Chart(document.getElementById('diskChart'), {
+  type: 'bar',
+  data: {
+    labels: diskData.labels,
+    datasets: [
+      { label: 'Used', data: diskData.used, backgroundColor: diskData.used.map((_, i) => diskData.pct[i] > 90 ? CHART_COLORS.red : diskData.pct[i] > 75 ? CHART_COLORS.yellow : CHART_COLORS.blue), borderRadius: 4 },
+      { label: 'Free', data: diskData.free, backgroundColor: CHART_COLORS.muted, borderRadius: 4 },
+    ]
+  },
+  options: { plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } }, scales: { x: { stacked: true, ticks: { color: '#94a3b8' }, grid: { display: false } }, y: { stacked: true, ticks: { color: '#94a3b8' }, grid: { color: '#334155' } } } }
+});
+</script>
+
+</body>
+</html>

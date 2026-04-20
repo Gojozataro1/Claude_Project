@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>macOS AI Ops Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --green: #22c55e; --yellow: #eab308; --red: #ef4444;
+      --bg: #0f172a; --surface: #1e293b; --border: #334155;
+      --text: #f1f5f9; --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 1.5rem; }
+    h1 { font-size: 1.5rem; font-weight: 700; }
+    h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    h3 { font-size: 0.95rem; font-weight: 600; color: var(--muted); margin-bottom: 0.25rem; }
+
+    .header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .mode-badge { padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600;
+      background: #3b82f620; color: #60a5fa; border: 1px solid #3b82f640; }
+    .timestamp { font-size: 0.8rem; color: var(--muted); margin-left: auto; }
+
+    .health-score { display: flex; align-items: center; gap: 0.5rem; }
+    .score-circle { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 800; border: 3px solid;
+      {% if health_score >= 80 %}border-color: var(--green); color: var(--green);
+      {% elif health_score >= 50 %}border-color: var(--yellow); color: var(--yellow);
+      {% else %}border-color: var(--red); color: var(--red);{% endif %} }
+
+    .grid { display: grid; gap: 1rem; margin-bottom: 2rem; }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    .card.green { border-left: 3px solid var(--green); }
+    .card.yellow { border-left: 3px solid var(--yellow); }
+    .card.red { border-left: 3px solid var(--red); }
+
+    .metric-value { font-size: 2rem; font-weight: 800; line-height: 1; margin: 0.5rem 0; }
+    .metric-value.green { color: var(--green); }
+    .metric-value.yellow { color: var(--yellow); }
+    .metric-value.red { color: var(--red); }
+    .metric-sub { font-size: 0.8rem; color: var(--muted); }
+
+    .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem; padding: 1.25rem; }
+    canvas { max-height: 220px; }
+
+    .suggestion-card { background: var(--surface); border: 1px solid var(--border); border-radius: 0.75rem;
+      padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+    .suggestion-card.critical { border-left: 4px solid var(--red); }
+    .suggestion-card.warning { border-left: 4px solid var(--yellow); }
+    .suggestion-card.info { border-left: 4px solid #60a5fa; }
+
+    .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; margin-right: 0.4rem; }
+    .badge-critical { background: #ef444420; color: var(--red); }
+    .badge-warning { background: #eab30820; color: var(--yellow); }
+    .badge-info { background: #3b82f620; color: #60a5fa; }
+    .badge-cat { background: #33415520; color: var(--muted); }
+
+    .suggestion-title { font-weight: 600; font-size: 0.95rem; margin: 0.4rem 0 0.3rem; }
+    .suggestion-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .suggestion-action { font-family: "SF Mono", "Fira Code", monospace; font-size: 0.8rem;
+      background: #0f172a; padding: 0.4rem 0.75rem; border-radius: 6px; display: block;
+      margin-bottom: 0.4rem; color: #a5f3fc; overflow-x: auto; white-space: pre-wrap; }
+    .suggestion-impact { font-size: 0.78rem; color: var(--muted); }
+
+    .process-table, .port-table, .agent-table, .file-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .process-table th, .port-table th, .agent-table th, .file-table th {
+      text-align: left; padding: 0.4rem 0.5rem; color: var(--muted); border-bottom: 1px solid var(--border); font-weight: 500; }
+    .process-table td, .port-table td, .agent-table td, .file-table td {
+      padding: 0.35rem 0.5rem; border-bottom: 1px solid #1e293b80; }
+    .process-table tr:hover td, .port-table tr:hover td { background: #33415520; }
+
+    .post-check-banner { padding: 1rem 1.5rem; border-radius: 0.75rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem; }
+    .post-check-banner.clear { background: #22c55e15; border: 1px solid #22c55e40; color: var(--green); }
+    .post-check-banner.issues { background: #ef444415; border: 1px solid #ef444440; color: var(--red); }
+    .check-row { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+    .check-pass { color: var(--green); font-weight: 600; }
+    .check-fail { color: var(--red); font-weight: 600; }
+
+    .section { margin-bottom: 2.5rem; }
+    .footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--border); font-size: 0.78rem; color: var(--muted); display: flex; gap: 2rem; flex-wrap: wrap; }
+    .tag { display: inline-block; padding: 0.15rem 0.5rem; background: var(--border); border-radius: 4px; font-size: 0.75rem; margin-right: 0.3rem; }
+
+    @media (max-width: 640px) { .grid-4 { grid-template-columns: 1fr 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>macOS AI Ops Dashboard</h1>
+  <span class="mode-badge">{{ mode | upper }} MODE</span>
+  <div class="health-score">
+    <div class="score-circle">{{ health_score }}</div>
+    <div>
+      <div style="font-weight:600;">Health Score</div>
+      <div class="metric-sub">out of 100</div>
+    </div>
+  </div>
+  <div class="timestamp">
+    <div>{{ hostname }}</div>
+    <div>{{ macos_version }}</div>
+    <div>Scanned: {{ scan_timestamp }}</div>
+  </div>
+</div>
+
+<!-- Post-Cleanup Check Banner -->
+{% if post_check %}
+<div class="post-check-banner {% if post_check.verdict == 'ALL_CLEAR' %}clear{% else %}issues{% endif %}">
+  <span style="font-size:1.5rem;">{% if post_check.verdict == 'ALL_CLEAR' %}✓{% else %}⚠{% endif %}</span>
+  <div>
+    <strong>Post-Cleanup Status: {{ post_check.verdict.replace('_', ' ') }}</strong>
+    <div style="font-size:0.85rem; margin-top:0.25rem;">
+      {{ post_check.pass_count }} checks passed{% if post_check.fail_count %}, {{ post_check.fail_count }} failed{% endif %}
+      &nbsp;·&nbsp; {{ post_check.timestamp }}
+    </div>
+    {% if post_check.issues %}
+    <div style="margin-top:0.5rem;">
+      {% for issue in post_check.issues %}<div style="font-size:0.82rem;">✗ {{ issue.check }}: {{ issue.detail }}</div>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+<!-- AI Summary -->
+{% if ai_summary %}
+<div class="section">
+  <div class="card" style="border-left: 3px solid #60a5fa;">
+    <h3 style="color:#60a5fa; margin-bottom:0.5rem;">AI Analysis Summary</h3>
+    <p style="font-size:0.9rem; line-height:1.6; color:var(--text);">{{ ai_summary }}</p>
+  </div>
+</div>
+{% endif %}
+
+<!-- Metric Cards -->
+<div class="section">
+  <h2>System Metrics</h2>
+  <div class="grid grid-4">
+    <div class="card {{ cpu_color }}">
+      <h3>CPU Usage</h3>
+      <div class="metric-value {{ cpu_color }}">{{ cpu_percent }}%</div>
+      <div class="metric-sub">{{ cpu_count_physical }} cores · Load {{ load_avg_1 | round(2) }}</div>
+    </div>
+    <div class="card {{ memory_color }}">
+      <h3>Memory</h3>
+      <div class="metric-value {{ memory_color }}">{{ memory_percent }}%</div>
+      <div class="metric-sub">{{ memory_used_gb }}GB / {{ memory_total_gb }}GB used</div>
+    </div>
+    <div class="card {{ disk_color }}">
+      <h3>Disk (Root)</h3>
+      <div class="metric-value {{ disk_color }}">{{ root_disk_percent }}%</div>
+      <div class="metric-sub">{{ root_disk_used_gb }}GB / {{ root_disk_total_gb }}GB</div>
+    </div>
+    <div class="card {{ swap_color }}">
+      <h3>Swap</h3>
+      <div class="metric-value {{ swap_color }}">{{ swap_percent }}%</div>
+      <div class="metric-sub">{{ swap_used_gb }}GB / {{ swap_total_gb }}GB</div>
+    </div>
+  </div>
+</div>
+
+<!-- Charts -->
+<div class="section">
+  <h2>Resource Charts</h2>
+  <div class="grid grid-3">
+    <div class="chart-card">
+      <h3>CPU per Core</h3>
+      <canvas id="cpuChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Memory Breakdown</h3>
+      <canvas id="memChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Disk Usage</h3>
+      <canvas id="diskChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- Storage Details -->
+<div class="section">
+  <h2>Storage Details</h2>
+  <div class="grid grid-4">
+    <div class="card {{ cache_color }}">
+      <h3>Cache</h3>
+      <div class="metric-value {{ cache_color }}">{{ cache_size_gb }}GB</div>
+      <div class="metric-sub">~/Library/Caches</div>
+    </div>
+    <div class="card {{ trash_color }}">
+      <h3>Trash</h3>
+      <div class="metric-value {{ trash_color }}">{{ trash_size_mb }}MB</div>
+      <div class="metric-sub">~/.Trash</div>
+    </div>
+    <div class="card">
+      <h3>Downloads</h3>
+      <div class="metric-value">{{ downloads_size_gb }}GB</div>
+      <div class="metric-sub">{{ old_downloads_count }} files untouched 90+ days</div>
+    </div>
+    <div class="card">
+      <h3>Large Files</h3>
+      <div class="metric-value">{{ large_files_count }}</div>
+      <div class="metric-sub">Files &gt; 500MB found</div>
+    </div>
+  </div>
+</div>
+
+<!-- Security -->
+{% if show_security %}
+<div class="section">
+  <h2>Security Overview</h2>
+  <div class="grid grid-4">
+    <div class="card {{ sip_color }}">
+      <h3>System Integrity (SIP)</h3>
+      <div class="metric-value {{ sip_color }}" style="font-size:1.2rem;">{% if sip_enabled %}Enabled{% elif sip_enabled == false %}DISABLED{% else %}Unknown{% endif %}</div>
+    </div>
+    <div class="card {{ fv_color }}">
+      <h3>FileVault Encryption</h3>
+      <div class="metric-value {{ fv_color }}" style="font-size:1.2rem;">{% if filevault_enabled %}Enabled{% elif filevault_enabled == false %}DISABLED{% else %}Unknown{% endif %}</div>
+    </div>
+    <div class="card {{ world_readable_color }}">
+      <h3>Exposed Sensitive Files</h3>
+      <div class="metric-value {{ world_readable_color }}">{{ world_readable_count }}</div>
+      <div class="metric-sub">World-readable credentials</div>
+    </div>
+    <div class="card {{ ports_color }}">
+      <h3>Open Listening Ports</h3>
+      <div class="metric-value {{ ports_color }}">{{ open_ports_count }}</div>
+      <div class="metric-sub">LISTEN state</div>
+    </div>
+  </div>
+
+  {% if open_ports %}
+  <div class="card" style="margin-top:1rem;">
+    <h3 style="margin-bottom:0.75rem;">Open Ports</h3>
+    <table class="port-table">
+      <thead><tr><th>Port</th><th>Process</th><th>PID</th><th>Address</th></tr></thead>
+      <tbody>
+        {% for p in open_ports %}
+        <tr>
+          <td><strong>{{ p.port }}</strong></td>
+          <td>{{ p.process_name }}</td>
+          <td style="color:var(--muted);">{{ p.pid }}</td>
+          <td style="color:var(--muted);">{{ p.address }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+<!-- Startup & Background -->
+{% if show_startup %}
+<div class="section">
+  <h2>Startup &amp; Background</h2>
+  <div class="grid grid-3" style="margin-bottom:1rem;">
+    <div class="card {{ launch_agents_color }}">
+      <h3>Launch Agents</h3>
+      <div class="metric-value {{ launch_agents_color }}">{{ launch_agent_count }}</div>
+      <div class="metric-sub">User LaunchAgents loaded</div>
+    </div>
+    <div class="card {{ background_color }}">
+      <h3>Background Processes</h3>
+      <div class="metric-value {{ background_color }}">{{ background_count }}</div>
+      <div class="metric-sub">No terminal attached</div>
+    </div>
+    <div class="card {{ high_cpu_color }}">
+      <h3>High-CPU Background</h3>
+      <div class="metric-value {{ high_cpu_color }}">{{ high_cpu_count }}</div>
+      <div class="metric-sub">Processes &gt; 5% CPU</div>
+    </div>
+  </div>
+
+  {% if top_processes %}
+  <div class="card">
+    <h3 style="margin-bottom:0.75rem;">Top Processes by CPU</h3>
+    <table class="process-table">
+      <thead><tr><th>Name</th><th>PID</th><th>CPU %</th><th>Mem %</th><th>Status</th></tr></thead>
+      <tbody>
+        {% for p in top_processes %}
+        <tr>
+          <td><strong>{{ p.name }}</strong></td>
+          <td style="color:var(--muted);">{{ p.pid }}</td>
+          <td style="color:{% if p.cpu_percent > 20 %}var(--red){% elif p.cpu_percent > 10 %}var(--yellow){% else %}var(--text){% endif %};">{{ p.cpu_percent }}%</td>
+          <td>{{ p.memory_percent }}%</td>
+          <td style="color:var(--muted);">{{ p.status }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
+<!-- AI Suggestions -->
+{% if suggestions and not hide_suggestions %}
+<div class="section">
+  <h2>AI Recommendations ({{ suggestions | length }})</h2>
+  {% for s in suggestions %}
+  <div class="suggestion-card {{ s.priority | lower }}">
+    <span class="badge badge-{{ s.priority | lower }}">{{ s.priority }}</span>
+    <span class="badge badge-cat">{{ s.category }}</span>
+    <div class="suggestion-title">{{ s.title }}</div>
+    <div class="suggestion-desc">{{ s.description }}</div>
+    <code class="suggestion-action">{{ s.action }}</code>
+    <div class="suggestion-impact">Impact: {{ s.estimated_impact }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- Post-Check Details -->
+{% if post_check and post_check.checks %}
+<div class="section">
+  <h2>Post-Cleanup Check Details</h2>
+  <div class="card">
+    {% for check_name, result in post_check.checks.items() %}
+    <div class="check-row">
+      <span>{{ check_name.replace('_', ' ').title() }}</span>
+      <span>
+        <span class="{% if result.status == 'pass' %}check-pass{% else %}check-fail{% endif %}">
+          {% if result.status == 'pass' %}✓ PASS{% else %}✗ FAIL{% endif %}
+        </span>
+        &nbsp;<span style="color:var(--muted); font-size:0.8rem;">{{ result.detail }}</span>
+      </span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Footer -->
+<div class="footer">
+  <span>macOS AI Ops Dashboard</span>
+  {% if ai_model %}<span>AI: {{ ai_model }}</span>{% endif %}
+  {% if tokens_input %}<span>Tokens: {{ tokens_input }} in / {{ tokens_output }} out{% if tokens_cache_read %} / {{ tokens_cache_read }} cached{% endif %}</span>{% endif %}
+  <span>Generated: {{ scan_timestamp }}</span>
+</div>
+
+<script>
+const CHART_COLORS = { green: '#22c55e', yellow: '#eab308', red: '#ef4444', blue: '#60a5fa', muted: '#475569' };
+
+// CPU per-core bar chart
+const cpuData = {{ chart_cpu | tojson }};
+new Chart(document.getElementById('cpuChart'), {
+  type: 'bar',
+  data: {
+    labels: cpuData.labels,
+    datasets: [{
+      label: 'CPU %',
+      data: cpuData.values,
+      backgroundColor: cpuData.values.map(v => v > 85 ? CHART_COLORS.red : v > 60 ? CHART_COLORS.yellow : CHART_COLORS.green),
+      borderRadius: 4,
+    }]
+  },
+  options: { plugins: { legend: { display: false } }, scales: { y: { max: 100, ticks: { color: '#94a3b8' }, grid: { color: '#334155' } }, x: { ticks: { color: '#94a3b8' }, grid: { display: false } } } }
+});
+
+// Memory doughnut
+const memData = {{ chart_mem | tojson }};
+new Chart(document.getElementById('memChart'), {
+  type: 'doughnut',
+  data: {
+    labels: memData.labels,
+    datasets: [{ data: memData.values, backgroundColor: [CHART_COLORS.blue, CHART_COLORS.muted, CHART_COLORS.yellow], borderWidth: 0 }]
+  },
+  options: { plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } }, cutout: '65%' }
+});
+
+// Disk stacked bar
+const diskData = {{ chart_disk | tojson }};
+new Chart(document.getElementById('diskChart'), {
+  type: 'bar',
+  data: {
+    labels: diskData.labels,
+    datasets: [
+      { label: 'Used', data: diskData.used, backgroundColor: diskData.used.map((_, i) => diskData.pct[i] > 90 ? CHART_COLORS.red : diskData.pct[i] > 75 ? CHART_COLORS.yellow : CHART_COLORS.blue), borderRadius: 4 },
+      { label: 'Free', data: diskData.free, backgroundColor: CHART_COLORS.muted, borderRadius: 4 },
+    ]
+  },
+  options: { plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } }, scales: { x: { stacked: true, ticks: { color: '#94a3b8' }, grid: { display: false } }, y: { stacked: true, ticks: { color: '#94a3b8' }, grid: { color: '#334155' } } } }
+});
+</script>
+
+</body>
+</html>

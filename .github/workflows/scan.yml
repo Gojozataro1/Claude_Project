@@ -1,0 +1,46 @@
+name: Daily macOS AI Ops Scan
+
+on:
+  schedule:
+    - cron: '0 8 * * *'      # 8:00 AM UTC daily
+  workflow_dispatch:           # Manual trigger from GitHub UI
+
+jobs:
+  scan:
+    runs-on: macos-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run AI Ops scan
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AI_OPS_MODE: all
+        run: python main.py --verbose
+
+      - name: Commit updated dashboard
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html data/latest_scan.json
+          git diff --staged --quiet || git commit -m "chore: daily scan $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

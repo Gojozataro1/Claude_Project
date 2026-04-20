@@ -1,0 +1,549 @@
+{
+  "scan_timestamp": "2026-04-20T18:20:49.431106+00:00",
+  "hostname": "Mac.domain.name",
+  "macos_version": "26.3.1",
+  "cpu_memory": {
+    "cpu_percent": 8.4,
+    "cpu_per_core": [
+      25.0,
+      22.0,
+      12.9,
+      8.9,
+      5.0,
+      2.0,
+      3.0,
+      2.0,
+      1.0,
+      2.0
+    ],
+    "cpu_freq_mhz": 4,
+    "cpu_count_logical": 10,
+    "cpu_count_physical": 10,
+    "load_avg_1_5_15": [
+      1.99951171875,
+      2.31787109375,
+      2.35107421875
+    ],
+    "memory_total_gb": 17.18,
+    "memory_used_gb": 5.45,
+    "memory_available_gb": 3.89,
+    "memory_percent": 77.3,
+    "swap_total_gb": 0.0,
+    "swap_used_gb": 0.0,
+    "swap_percent": 0.0,
+    "top_processes": [
+      {
+        "pid": 0,
+        "name": "kernel_task",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "idle"
+      },
+      {
+        "pid": 1,
+        "name": "launchd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 317,
+        "name": "logd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 318,
+        "name": "smd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 319,
+        "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 321,
+        "name": "fseventsd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 322,
+        "name": "mediaremoted",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 325,
+        "name": "systemstats",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 327,
+        "name": "accessoryupdater",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 328,
+        "name": "uarpassetmanager",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      }
+    ],
+    "thresholds": {
+      "cpu": "green",
+      "memory": "yellow",
+      "swap": "green"
+    }
+  },
+  "disk_storage": {
+    "partitions": [
+      {
+        "mountpoint": "/",
+        "device": "/dev/disk3s1s1",
+        "fstype": "apfs",
+        "total_gb": 245.11,
+        "used_gb": 12.46,
+        "free_gb": 154.33,
+        "percent": 7.5
+      },
+      {
+        "mountpoint": "/System/Volumes/VM",
+        "device": "/dev/disk3s6",
+        "fstype": "apfs",
+        "total_gb": 245.11,
+        "used_gb": 0.0,
+        "free_gb": 154.33,
+        "percent": 0.0
+      },
+      {
+        "mountpoint": "/System/Volumes/Preboot",
+        "device": "/dev/disk3s2",
+        "fstype": "apfs",
+        "total_gb": 245.11,
+        "used_gb": 8.85,
+        "free_gb": 154.33,
+        "percent": 5.4
+      },
+      {
+        "mountpoint": "/System/Volumes/Update",
+        "device": "/dev/disk3s4",
+        "fstype": "apfs",
+        "total_gb": 245.11,
+        "used_gb": 0.01,
+        "free_gb": 154.33,
+        "percent": 0.0
+      },
+      {
+        "mountpoint": "/System/Volumes/xarts",
+        "device": "/dev/disk1s2",
+        "fstype": "apfs",
+        "total_gb": 0.52,
+        "used_gb": 0.01,
+        "free_gb": 0.51,
+        "percent": 1.2
+      },
+      {
+        "mountpoint": "/System/Volumes/iSCPreboot",
+        "device": "/dev/disk1s1",
+        "fstype": "apfs",
+        "total_gb": 0.52,
+        "used_gb": 0.01,
+        "free_gb": 0.51,
+        "percent": 1.2
+      },
+      {
+        "mountpoint": "/System/Volumes/Hardware",
+        "device": "/dev/disk1s3",
+        "fstype": "apfs",
+        "total_gb": 0.52,
+        "used_gb": 0.0,
+        "free_gb": 0.51,
+        "percent": 0.1
+      },
+      {
+        "mountpoint": "/System/Volumes/Data",
+        "device": "/dev/disk3s5",
+        "fstype": "apfs",
+        "total_gb": 245.11,
+        "used_gb": 68.05,
+        "free_gb": 154.33,
+        "percent": 30.6
+      },
+      {
+        "mountpoint": "/Volumes/Claude",
+        "device": "/dev/disk4s1",
+        "fstype": "hfs",
+        "total_gb": 0.93,
+        "used_gb": 0.62,
+        "free_gb": 0.31,
+        "percent": 66.6
+      },
+      {
+        "mountpoint": "/private/var/folders/l5/jn4mhcw16wq42x6s5dscz8pm0000gn/T/AppTranslocation/D31BE977-4E2B-43C6-9775-4ACFE85CA500",
+        "device": "/Volumes/Claude/Claude.app",
+        "fstype": "nullfs",
+        "total_gb": 0.93,
+        "used_gb": 0.62,
+        "free_gb": 0.31,
+        "percent": 66.6
+      },
+      {
+        "mountpoint": "/Volumes/VS Code",
+        "device": "/dev/disk5s1",
+        "fstype": "hfs",
+        "total_gb": 1.06,
+        "used_gb": 0.95,
+        "free_gb": 0.12,
+        "percent": 89.1
+      }
+    ],
+    "large_files": [],
+    "cache_size_gb": 2.9,
+    "cache_top_dirs": [
+      {
+        "name": "Google",
+        "size_mb": 1397.5
+      },
+      {
+        "name": "com.apple.callintelligenced",
+        "size_mb": 315.3
+      },
+      {
+        "name": "com.apple.textunderstandingd",
+        "size_mb": 315.3
+      },
+      {
+        "name": "SiriTTS",
+        "size_mb": 233.6
+      },
+      {
+        "name": "Homebrew",
+        "size_mb": 209.2
+      }
+    ],
+    "trash_size_mb": 0.0,
+    "downloads_size_gb": 0.74,
+    "old_downloads": [
+      {
+        "path": "/Users/abhishek/Downloads/.localized",
+        "size_mb": 0.0,
+        "last_accessed_days_ago": 97
+      }
+    ],
+    "thresholds": {
+      "root_disk": "green",
+      "cache": "green",
+      "trash": "green"
+    }
+  },
+  "startup_apps": {
+    "launch_agents": [
+      {
+        "label": "com.google.keystone.xpcservice",
+        "program": "",
+        "run_at_load": false,
+        "keep_alive": false,
+        "plist_path": "/Users/abhishek/Library/LaunchAgents/com.google.keystone.xpcservice.plist"
+      },
+      {
+        "label": "com.google.keystone.agent",
+        "program": "",
+        "run_at_load": false,
+        "keep_alive": false,
+        "plist_path": "/Users/abhishek/Library/LaunchAgents/com.google.keystone.agent.plist"
+      },
+      {
+        "label": "com.google.GoogleUpdater.wake",
+        "program": "/Users/abhishek/Library/Application Support/Google/GoogleUpdater/Current/GoogleUpdater.app/Contents/MacOS/GoogleUpdater",
+        "run_at_load": false,
+        "keep_alive": false,
+        "plist_path": "/Users/abhishek/Library/LaunchAgents/com.google.GoogleUpdater.wake.plist"
+      }
+    ],
+    "launch_agent_count": 3,
+    "login_items": [],
+    "background_processes": [
+      {
+        "pid": 24959,
+        "name": "Python",
+        "cpu_percent": 69.5,
+        "memory_percent": 0.3,
+        "status": "running"
+      },
+      {
+        "pid": 1110,
+        "name": "Claude",
+        "cpu_percent": 4.7,
+        "memory_percent": 1.0,
+        "status": "running"
+      },
+      {
+        "pid": 1192,
+        "name": "Claude Helper (Renderer)",
+        "cpu_percent": 4.2,
+        "memory_percent": 0.9,
+        "status": "running"
+      },
+      {
+        "pid": 1843,
+        "name": "Code Helper (Renderer)",
+        "cpu_percent": 2.1,
+        "memory_percent": 2.3,
+        "status": "running"
+      },
+      {
+        "pid": 1825,
+        "name": "Code Helper (GPU)",
+        "cpu_percent": 1.7,
+        "memory_percent": 0.6,
+        "status": "running"
+      },
+      {
+        "pid": 1186,
+        "name": "Claude Helper",
+        "cpu_percent": 0.3,
+        "memory_percent": 0.3,
+        "status": "running"
+      },
+      {
+        "pid": 2165,
+        "name": "com.apple.Virtualization.VirtualMachine",
+        "cpu_percent": 0.3,
+        "memory_percent": 0.9,
+        "status": "sleeping"
+      },
+      {
+        "pid": 6552,
+        "name": "Code Helper",
+        "cpu_percent": 0.3,
+        "memory_percent": 0.6,
+        "status": "running"
+      },
+      {
+        "pid": 1822,
+        "name": "Code",
+        "cpu_percent": 0.1,
+        "memory_percent": 1.1,
+        "status": "running"
+      },
+      {
+        "pid": 6407,
+        "name": "Code Helper (Plugin)",
+        "cpu_percent": 0.1,
+        "memory_percent": 0.8,
+        "status": "running"
+      },
+      {
+        "pid": 0,
+        "name": "kernel_task",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "idle"
+      },
+      {
+        "pid": 1,
+        "name": "launchd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 317,
+        "name": "logd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 318,
+        "name": "smd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 319,
+        "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 321,
+        "name": "fseventsd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 322,
+        "name": "mediaremoted",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 325,
+        "name": "systemstats",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 327,
+        "name": "accessoryupdater",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 328,
+        "name": "uarpassetmanager",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 329,
+        "name": "configd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 330,
+        "name": "endpointsecurity",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 331,
+        "name": "powerd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 332,
+        "name": "IOMFB_bics_daemo",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 334,
+        "name": "amfid",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 336,
+        "name": "remoted",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 338,
+        "name": "keybagd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 339,
+        "name": "softwareupdated",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 340,
+        "name": "corespeechd_syst",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 342,
+        "name": "watchdogd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      }
+    ],
+    "total_background_count": 30,
+    "high_cpu_background": [
+      {
+        "pid": 24959,
+        "name": "Python",
+        "cpu_percent": 69.5,
+        "memory_percent": 0.3,
+        "status": "running"
+      }
+    ],
+    "thresholds": {
+      "launch_agents": "green",
+      "background_count": "green",
+      "high_cpu_count": "yellow"
+    }
+  },
+  "security": {
+    "world_readable_sensitive": [
+      {
+        "path": "/Users/abhishek/Library/Python/3.9/lib/python/site-packages/certifi/cacert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 272441,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      }
+    ],
+    "open_ports": [],
+    "sip_enabled": true,
+    "filevault_enabled": true,
+    "public_dir_exposure": [
+      {
+        "path": "/Users/abhishek/Public/.localized",
+        "size_bytes": 0,
+        "permissions_octal": "0o644"
+      },
+      {
+        "path": "/Users/abhishek/Public/Drop Box/.localized",
+        "size_bytes": 0,
+        "permissions_octal": "0o644"
+      }
+    ],
+    "ssh_key_permissions": [],
+    "env_files_exposed": [],
+    "critical_count": 1,
+    "thresholds": {
+      "sip": "green",
+      "filevault": "green",
+      "world_readable": "yellow",
+      "open_ports": "green"
+    }
+  },
+  "ai_analysis": {
+    "summary": "AI analysis skipped (no_ai=True).",
+    "health_score": 50,
+    "suggestions": [],
+    "model_used": "none",
+    "tokens_used": {}
+  }
+}

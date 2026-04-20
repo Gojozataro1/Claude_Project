@@ -1,0 +1,15 @@
+{
+  "name": "all",
+  "description": "Full scan mode — all collectors, balanced analysis across all categories",
+  "collectors": ["cpu_memory", "disk_storage", "startup_apps", "security"],
+  "disk_large_file_patterns": ["node_modules", "*.log", "*.tmp", "build", "dist"],
+  "analyzer_focus": "Perform a balanced full-system analysis covering performance, disk health, startup optimization, and security. Prioritize the most impactful improvements across all categories. Balance between quick wins (easy cleanup) and important security fixes.",
+  "dashboard_layout": {
+    "primary_section": "summary",
+    "show_security": true,
+    "show_startup": true,
+    "show_network": true,
+    "chart_emphasis": "all",
+    "severity_badges": true
+  }
+}
