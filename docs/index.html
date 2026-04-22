@@ -102,9 +102,9 @@
     </div>
   </div>
   <div class="timestamp">
-    <div>Mac.domain.name</div>
-    <div>26.3.1</div>
-    <div>Scanned: 2026-04-20T18:20:49.431106+00:00</div>
+    <div>sjc22-be109-0274a035-4113-43fe-a92b-05c68a31bacf-A69661589772.local</div>
+    <div>15.7.4</div>
+    <div>Scanned: 2026-04-22T11:43:04.851142+00:00</div>
   </div>
 </div>
 
@@ -116,7 +116,7 @@
 <div class="section">
   <div class="card" style="border-left: 3px solid #60a5fa;">
     <h3 style="color:#60a5fa; margin-bottom:0.5rem;">AI Analysis Summary</h3>
-    <p style="font-size:0.9rem; line-height:1.6; color:var(--text);">AI analysis skipped (no_ai=True).</p>
+    <p style="font-size:0.9rem; line-height:1.6; color:var(--text);">AI analysis skipped (--no-ai).</p>
   </div>
 </div>
 
@@ -127,23 +127,23 @@
   <div class="grid grid-4">
     <div class="card green">
       <h3>CPU Usage</h3>
-      <div class="metric-value green">8.4%</div>
-      <div class="metric-sub">10 cores · Load 2.0</div>
+      <div class="metric-value green">0%</div>
+      <div class="metric-sub">0 cores · Load 0</div>
     </div>
-    <div class="card yellow">
+    <div class="card green">
       <h3>Memory</h3>
-      <div class="metric-value yellow">77.3%</div>
-      <div class="metric-sub">5.45GB / 17.18GB used</div>
+      <div class="metric-value green">0%</div>
+      <div class="metric-sub">0GB / 0GB used</div>
     </div>
     <div class="card green">
       <h3>Disk (Root)</h3>
-      <div class="metric-value green">7.5%</div>
-      <div class="metric-sub">12.46GB / 245.11GB</div>
+      <div class="metric-value green">18.9%</div>
+      <div class="metric-sub">11.27GB / 343.07GB</div>
     </div>
     <div class="card green">
       <h3>Swap</h3>
-      <div class="metric-value green">0.0%</div>
-      <div class="metric-sub">0.0GB / 0.0GB</div>
+      <div class="metric-value green">0%</div>
+      <div class="metric-sub">0GB / 0GB</div>
     </div>
   </div>
 </div>
@@ -173,7 +173,7 @@
   <div class="grid grid-4">
     <div class="card green">
       <h3>Cache</h3>
-      <div class="metric-value green">2.9GB</div>
+      <div class="metric-value green">0.43GB</div>
       <div class="metric-sub">~/Library/Caches</div>
     </div>
     <div class="card green">
@@ -183,8 +183,8 @@
     </div>
     <div class="card">
       <h3>Downloads</h3>
-      <div class="metric-value">0.74GB</div>
-      <div class="metric-sub">1 files untouched 90+ days</div>
+      <div class="metric-value">0.0GB</div>
+      <div class="metric-sub">0 files untouched 90+ days</div>
     </div>
     <div class="card">
       <h3>Large Files</h3>
@@ -199,17 +199,17 @@
 <div class="section">
   <h2>Security Overview</h2>
   <div class="grid grid-4">
-    <div class="card green">
+    <div class="card red">
       <h3>System Integrity (SIP)</h3>
-      <div class="metric-value green" style="font-size:1.2rem;">Enabled</div>
+      <div class="metric-value red" style="font-size:1.2rem;">DISABLED</div>
     </div>
-    <div class="card green">
+    <div class="card red">
       <h3>FileVault Encryption</h3>
-      <div class="metric-value green" style="font-size:1.2rem;">Enabled</div>
+      <div class="metric-value red" style="font-size:1.2rem;">DISABLED</div>
     </div>
-    <div class="card yellow">
+    <div class="card red">
       <h3>Exposed Sensitive Files</h3>
-      <div class="metric-value yellow">1</div>
+      <div class="metric-value red">919</div>
       <div class="metric-sub">World-readable credentials</div>
     </div>
     <div class="card green">
@@ -230,7 +230,7 @@
   <div class="grid grid-3" style="margin-bottom:1rem;">
     <div class="card green">
       <h3>Launch Agents</h3>
-      <div class="metric-value green">3</div>
+      <div class="metric-value green">1</div>
       <div class="metric-sub">User LaunchAgents loaded</div>
     </div>
     <div class="card green">
@@ -238,87 +238,13 @@
       <div class="metric-value green">30</div>
       <div class="metric-sub">No terminal attached</div>
     </div>
-    <div class="card yellow">
+    <div class="card green">
       <h3>High-CPU Background</h3>
-      <div class="metric-value yellow">1</div>
+      <div class="metric-value green">0</div>
       <div class="metric-sub">Processes &gt; 5% CPU</div>
     </div>
   </div>
 
-  
-  <div class="card">
-    <h3 style="margin-bottom:0.75rem;">Top Processes by CPU</h3>
-    <table class="process-table">
-      <thead><tr><th>Name</th><th>PID</th><th>CPU %</th><th>Mem %</th><th>Status</th></tr></thead>
-      <tbody>
-        
-        <tr>
-          <td><strong>kernel_task</strong></td>
-          <td style="color:var(--muted);">0</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">idle</td>
-        </tr>
-        
-        <tr>
-          <td><strong>launchd</strong></td>
-          <td style="color:var(--muted);">1</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-        <tr>
-          <td><strong>logd</strong></td>
-          <td style="color:var(--muted);">317</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-        <tr>
-          <td><strong>smd</strong></td>
-          <td style="color:var(--muted);">318</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-        <tr>
-          <td><strong>UserEventAgent</strong></td>
-          <td style="color:var(--muted);">319</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-        <tr>
-          <td><strong>fseventsd</strong></td>
-          <td style="color:var(--muted);">321</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-        <tr>
-          <td><strong>mediaremoted</strong></td>
-          <td style="color:var(--muted);">322</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-        <tr>
-          <td><strong>systemstats</strong></td>
-          <td style="color:var(--muted);">325</td>
-          <td style="color:var(--text);">0%</td>
-          <td>0%</td>
-          <td style="color:var(--muted);">sleeping</td>
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
   
 </div>
 
@@ -334,14 +260,14 @@
   <span>macOS AI Ops Dashboard</span>
   <span>AI: none</span>
   
-  <span>Generated: 2026-04-20T18:20:49.431106+00:00</span>
+  <span>Generated: 2026-04-22T11:43:04.851142+00:00</span>
 </div>
 
 <script>
 const CHART_COLORS = { green: '#22c55e', yellow: '#eab308', red: '#ef4444', blue: '#60a5fa', muted: '#475569' };
 
 // CPU per-core bar chart
-const cpuData = {"labels": ["Core 1", "Core 2", "Core 3", "Core 4", "Core 5", "Core 6", "Core 7", "Core 8", "Core 9", "Core 10"], "values": [25.0, 22.0, 12.9, 8.9, 5.0, 2.0, 3.0, 2.0, 1.0, 2.0]};
+const cpuData = {"labels": [], "values": []};
 new Chart(document.getElementById('cpuChart'), {
   type: 'bar',
   data: {
@@ -357,7 +283,7 @@ new Chart(document.getElementById('cpuChart'), {
 });
 
 // Memory doughnut
-const memData = {"labels": ["Used", "Available", "Swap Used"], "values": [5.45, 3.89, 0.0]};
+const memData = {"labels": ["Used", "Available", "Swap Used"], "values": [0, 0, 0]};
 new Chart(document.getElementById('memChart'), {
   type: 'doughnut',
   data: {
@@ -368,7 +294,7 @@ new Chart(document.getElementById('memChart'), {
 });
 
 // Disk stacked bar
-const diskData = {"free": [154.33, 154.33, 154.33, 154.33, 0.51], "labels": ["/", "/System/Volumes/VM", "/System/Volumes/Preboot", "/System/Volumes/Update", "/System/Volumes/xarts"], "pct": [7.5, 0.0, 5.4, 0.0, 1.2], "used": [12.46, 0.0, 8.85, 0.01, 0.01]};
+const diskData = {"free": [48.18, 48.18, 48.18, 48.18, 0.52], "labels": ["/", "/System/Volumes/VM", "/System/Volumes/Preboot", "/System/Volumes/Update", "/System/Volumes/xarts"], "pct": [18.9, 0.0, 13.2, 0.1, 0.0], "used": [11.27, 0.0, 7.33, 0.04, 0.0]};
 new Chart(document.getElementById('diskChart'), {
   type: 'bar',
   data: {
