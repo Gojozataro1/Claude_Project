@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-04-24T11:44:58.831372+00:00",
-  "hostname": "sjc20-cw712-9c6e3835-9ce5-4b09-851b-84f829f2717c-36B8B2BAE627.local",
+  "scan_timestamp": "2026-04-25T10:30:43.793349+00:00",
+  "hostname": "iad20-fj924-384d706b-f31c-4ed9-8d18-27393da086c0-5281E66A90AE.local",
   "macos_version": "15.7.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 48.2,
-        "percent": 18.9
+        "free_gb": 47.98,
+        "percent": 19.0
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 48.2,
+        "free_gb": 47.98,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.33,
-        "free_gb": 48.2,
-        "percent": 13.2
+        "free_gb": 47.98,
+        "percent": 13.3
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 48.2,
+        "free_gb": 47.98,
         "percent": 0.1
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.09,
-        "free_gb": 48.2,
-        "percent": 85.1
+        "used_gb": 275.3,
+        "free_gb": 47.98,
+        "percent": 85.2
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
@@ -88,7 +88,7 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.43,
+    "cache_size_gb": 0.44,
     "cache_top_dirs": [
       {
         "name": "bazel",
@@ -108,7 +108,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 30.7
+        "size_mb": 32.0
       }
     ],
     "trash_size_mb": 0.0,
@@ -164,13 +164,6 @@
       {
         "pid": 82,
         "name": "UserEventAgent",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 83,
-        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -339,6 +332,13 @@
       {
         "pid": 122,
         "name": "usbmuxd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 123,
+        "name": "securityd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
