@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-04-28T16:11:35.223889+00:00",
-  "hostname": "iad20-gt1020-88985859-1b65-4cbc-b803-ef63a5a27126-96626D172DC1.local",
+  "scan_timestamp": "2026-04-29T13:10:53.521797+00:00",
+  "hostname": "sat12-bq167-118cf10c-5913-4677-b7ab-47daf5320d81-DE4D424B9A07.local",
   "macos_version": "15.7.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 48.14,
-        "percent": 19.0
+        "free_gb": 48.62,
+        "percent": 18.8
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 48.14,
+        "free_gb": 48.62,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.33,
-        "free_gb": 48.14,
-        "percent": 13.2
+        "free_gb": 48.62,
+        "percent": 13.1
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 48.14,
+        "free_gb": 48.62,
         "percent": 0.1
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.14,
-        "free_gb": 48.14,
-        "percent": 85.1
+        "used_gb": 274.66,
+        "free_gb": 48.62,
+        "percent": 85.0
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
@@ -88,19 +88,19 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.43,
+    "cache_size_gb": 0.42,
     "cache_top_dirs": [
       {
         "name": "bazel",
         "size_mb": 184.1
       },
       {
-        "name": "Homebrew",
-        "size_mb": 66.8
-      },
-      {
         "name": "bazelisk",
         "size_mb": 60.4
+      },
+      {
+        "name": "Homebrew",
+        "size_mb": 54.1
       },
       {
         "name": "GeoServices",
@@ -108,7 +108,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 30.7
+        "size_mb": 31.8
       }
     ],
     "trash_size_mb": 0.0,
@@ -164,13 +164,6 @@
       {
         "pid": 82,
         "name": "UserEventAgent",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 83,
-        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -339,6 +332,13 @@
       {
         "pid": 122,
         "name": "usbmuxd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 123,
+        "name": "securityd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -992,14 +992,14 @@
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/.dotnet/sdk/10.0.202/trustedroots/timestampctl.pem",
+        "path": "/Users/runner/.dotnet/sdk/10.0.203/trustedroots/timestampctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 552370,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/.dotnet/sdk/10.0.202/trustedroots/codesignctl.pem",
+        "path": "/Users/runner/.dotnet/sdk/10.0.203/trustedroots/codesignctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 512074,
         "severity": "Critical",
