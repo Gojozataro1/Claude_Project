@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-04-29T13:10:53.521797+00:00",
-  "hostname": "sat12-bq167-118cf10c-5913-4677-b7ab-47daf5320d81-DE4D424B9A07.local",
+  "scan_timestamp": "2026-04-30T13:09:59.331170+00:00",
+  "hostname": "sat12-bq159-df2df534-3deb-4380-8673-9926f4bb0d18-36ACFFF63082.local",
   "macos_version": "15.7.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 48.62,
+        "free_gb": 48.65,
         "percent": 18.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 48.62,
+        "free_gb": 48.65,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.33,
-        "free_gb": 48.62,
+        "free_gb": 48.65,
         "percent": 13.1
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 48.62,
+        "free_gb": 48.65,
         "percent": 0.1
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 274.66,
-        "free_gb": 48.62,
+        "used_gb": 274.63,
+        "free_gb": 48.65,
         "percent": 85.0
       },
       {
