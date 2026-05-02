@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-05-01T11:42:57.011070+00:00",
-  "hostname": "sjc22-bt143-63bddf5a-fb3f-42fc-b1bd-d4401ca8adc0-EA8FABBD8221.local",
+  "scan_timestamp": "2026-05-02T10:38:13.141846+00:00",
+  "hostname": "sjc20-bb714-278b9d06-9c78-4917-9bb0-1807ceeb72ad-4A0E33A376A9.local",
   "macos_version": "15.7.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 47.93,
-        "percent": 19.0
+        "free_gb": 48.71,
+        "percent": 18.8
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 47.93,
+        "free_gb": 48.71,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.33,
-        "free_gb": 47.93,
-        "percent": 13.3
+        "free_gb": 48.71,
+        "percent": 13.1
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 47.93,
+        "free_gb": 48.71,
         "percent": 0.1
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.35,
-        "free_gb": 47.93,
-        "percent": 85.2
+        "used_gb": 274.57,
+        "free_gb": 48.71,
+        "percent": 84.9
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
@@ -88,19 +88,19 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.44,
+    "cache_size_gb": 0.42,
     "cache_top_dirs": [
       {
         "name": "bazel",
         "size_mb": 184.1
       },
       {
-        "name": "Homebrew",
-        "size_mb": 66.8
-      },
-      {
         "name": "bazelisk",
         "size_mb": 60.4
+      },
+      {
+        "name": "Homebrew",
+        "size_mb": 54.1
       },
       {
         "name": "GeoServices",
@@ -108,7 +108,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 32.0
+        "size_mb": 31.8
       }
     ],
     "trash_size_mb": 0.0,
@@ -992,14 +992,14 @@
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/.dotnet/sdk/10.0.202/trustedroots/timestampctl.pem",
+        "path": "/Users/runner/.dotnet/sdk/10.0.203/trustedroots/timestampctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 552370,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/.dotnet/sdk/10.0.202/trustedroots/codesignctl.pem",
+        "path": "/Users/runner/.dotnet/sdk/10.0.203/trustedroots/codesignctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 512074,
         "severity": "Critical",
