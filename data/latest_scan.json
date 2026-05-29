@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-05-28T11:39:09.748976+00:00",
-  "hostname": "iad20-fj925-dc1df1b3-f4e3-4688-89d7-929314f4a70a-2680D7EE0CFF.local",
+  "scan_timestamp": "2026-05-29T11:30:34.834595+00:00",
+  "hostname": "iad20-fj922-9cd9c6cf-70f9-4379-8408-d9d2d28f6164-AAF25E113EBC.local",
   "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 47.78,
+        "free_gb": 47.85,
         "percent": 19.1
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 47.78,
+        "free_gb": 47.85,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.31,
-        "free_gb": 47.78,
-        "percent": 13.3
+        "free_gb": 47.85,
+        "percent": 13.2
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 47.78,
+        "free_gb": 47.85,
         "percent": 0.1
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.52,
-        "free_gb": 47.78,
+        "used_gb": 275.45,
+        "free_gb": 47.85,
         "percent": 85.2
       },
       {
@@ -164,6 +164,13 @@
       {
         "pid": 82,
         "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 83,
+        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -332,13 +339,6 @@
       {
         "pid": 122,
         "name": "usbmuxd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 123,
-        "name": "securityd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
