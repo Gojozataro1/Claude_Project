@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-05-29T11:30:34.834595+00:00",
-  "hostname": "iad20-fj922-9cd9c6cf-70f9-4379-8408-d9d2d28f6164-AAF25E113EBC.local",
+  "scan_timestamp": "2026-05-30T10:01:17.568428+00:00",
+  "hostname": "sjc22-be110-f1500049-5ee7-4a7c-91a3-9fac88a4832c-4EA0DB14BD90.local",
   "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 47.85,
-        "percent": 19.1
+        "free_gb": 48.32,
+        "percent": 18.9
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 47.85,
+        "free_gb": 48.32,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.31,
-        "free_gb": 47.85,
-        "percent": 13.2
+        "free_gb": 48.32,
+        "percent": 13.1
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 47.85,
+        "free_gb": 48.32,
         "percent": 0.1
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.45,
-        "free_gb": 47.85,
-        "percent": 85.2
+        "used_gb": 274.98,
+        "free_gb": 48.32,
+        "percent": 85.1
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
@@ -88,19 +88,19 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.43,
+    "cache_size_gb": 0.44,
     "cache_top_dirs": [
       {
         "name": "bazel",
         "size_mb": 184.1
       },
       {
-        "name": "bazelisk",
-        "size_mb": 60.4
+        "name": "Homebrew",
+        "size_mb": 72.3
       },
       {
-        "name": "Homebrew",
-        "size_mb": 59.2
+        "name": "bazelisk",
+        "size_mb": 60.4
       },
       {
         "name": "GeoServices",
@@ -108,7 +108,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 31.1
+        "size_mb": 31.2
       }
     ],
     "trash_size_mb": 0.0,
