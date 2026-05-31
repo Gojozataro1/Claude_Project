@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otto — Software for the Web</title>
+    <meta name="description" content="Otto builds beautiful, high-performance websites and web applications for businesses that want to stand out.">
+    <meta property="og:title" content="Otto — Software for the Web">
+    <meta property="og:description" content="Beautiful, high-performance websites for businesses that want to stand out. Designed with precision. Built to last.">
+    <meta property="og:type" content="website">
+    <style>
+        /* ── SHELL-001: Design tokens + typography ── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg:             #000000;
+            --surface:        #0a0a0a;
+            --surface-2:      #111111;
+            --text:           #f5f5f7;
+            --text-secondary: #86868b;
+            --accent:         #2997ff;
+            --accent-dim:     rgba(41, 151, 255, 0.12);
+            --accent-border:  rgba(41, 151, 255, 0.28);
+            --border:         rgba(255, 255, 255, 0.08);
+            --font:           -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', 'Segoe UI', sans-serif;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ── SHELL-002: Navigation ── */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 44px;
+            background: rgba(0, 0, 0, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 0.5px solid var(--border);
+        }
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+            color: var(--text);
+            cursor: pointer;
+            user-select: none;
+            background: none;
+            border: none;
+            font-family: var(--font);
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links button {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-family: var(--font);
+            font-size: 13px;
+            cursor: pointer;
+            padding: 0;
+            transition: color 0.2s;
+        }
+        .nav-links button:hover,
+        .nav-links button.active { color: var(--text); }
+        .nav-cta {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-family: var(--font);
+            font-size: 13px;
+            font-weight: 500;
+            padding: 7px 16px;
+            border-radius: 980px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .nav-cta:hover { opacity: 0.84; }
+
+        /* ── SHELL-002: Page transitions ── */
+        .page {
+            opacity: 0;
+            transition: opacity 0.32s ease;
+            pointer-events: none;
+            position: absolute;
+            top: 0; left: 0; right: 0;
+        }
+        .page.active {
+            opacity: 1;
+            pointer-events: auto;
+            position: relative;
+        }
+
+        /* ── Scroll reveal (shared) ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(26px);
+            transition: opacity 0.72s ease, transform 0.72s ease;
+        }
+        .reveal.in { opacity: 1; transform: none; }
+
+        /* ── Shared typography helpers ── */
+        .eyebrow {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        .section-label {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .section-title {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            line-height: 1.06;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .section-sub {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            text-align: center;
+            max-width: 520px;
+            margin: 0 auto 72px;
+        }
+
+        /* ── Shared buttons ── */
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            font-family: var(--font);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 14px 30px;
+            border-radius: 980px;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.18s;
+        }
+        .btn-primary:hover { opacity: 0.84; transform: scale(1.02); }
+        .btn-ghost {
+            background: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent-border);
+            font-family: var(--font);
+            font-size: 16px;
+            font-weight: 500;
+            padding: 14px 30px;
+            border-radius: 980px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn-ghost:hover { background: var(--accent-dim); }
+        .btn-primary.btn-orange { background: #F96B2F; border-radius: 6px; }
+
+        /* ═══════════════════════════════════════════
+           HOME PAGE
+           ═══════════════════════════════════════════ */
+
+        /* ANIM-001 + HOME-001: Hero */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        #canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-body {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 24px;
+            max-width: 760px;
+        }
+        .hero-title {
+            font-size: clamp(52px, 9vw, 96px);
+            font-weight: 700;
+            letter-spacing: -0.038em;
+            line-height: 1.02;
+            margin-bottom: 22px;
+            background: linear-gradient(160deg, #ffffff 38%, #6e6e73 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-sub {
+            font-size: clamp(16px, 2.2vw, 20px);
+            color: var(--text-secondary);
+            line-height: 1.65;
+            max-width: 500px;
+            margin: 0 auto 38px;
+        }
+        .btn-row {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* HOME-002: Features strip */
+        .features {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 130px 44px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+        }
+        .feature-card {
+            background: var(--surface);
+            padding: 44px 38px;
+            transition: background 0.25s;
+        }
+        .feature-card:hover { background: var(--surface-2); }
+        .feature-icon {
+            display: block;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 22px;
+        }
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.016em;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        /* HOME-002: Home CTA */
+        .home-cta {
+            padding: 120px 44px;
+            text-align: center;
+            background: radial-gradient(ellipse 80% 55% at 50% 100%, rgba(41,151,255,0.07) 0%, transparent 70%);
+        }
+        .home-cta .section-sub { margin-bottom: 38px; }
+
+        /* ═══════════════════════════════════════════
+           SERVICES PAGE
+           ═══════════════════════════════════════════ */
+
+        /* SVC-001: Services hero */
+        .services-hero {
+            padding: 148px 44px 72px;
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .services-hero .section-title {
+            font-size: clamp(40px, 7vw, 80px);
+            margin-bottom: 20px;
+        }
+        .services-hero .section-sub { margin-bottom: 0; }
+
+        /* SVC-001: Service cards */
+        .services-grid {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 44px 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .service-card {
+            background: var(--surface);
+            border: 0.5px solid var(--border);
+            border-radius: 18px;
+            padding: 44px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .service-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(140deg, rgba(41,151,255,0.06) 0%, transparent 55%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+        .service-card:hover { border-color: var(--accent-border); transform: translateY(-3px); }
+        .service-card:hover::after { opacity: 1; }
+        .service-num {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 18px;
+        }
+        .service-card h2 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 14px;
+        }
+        .service-card > p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.72;
+            margin-bottom: 22px;
+        }
+        .tags { display: flex; gap: 7px; flex-wrap: wrap; }
+        .tag {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 4px 11px;
+            border-radius: 980px;
+            background: var(--accent-dim);
+            color: var(--accent);
+            border: 0.5px solid var(--accent-border);
+        }
+
+        /* SVC-002: Process */
+        .process {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 44px 110px;
+        }
+        .process-head { margin-bottom: 48px; }
+        .process-head .section-label,
+        .process-head .section-title { text-align: left; }
+        .process-head .section-title {
+            font-size: clamp(28px, 4vw, 44px);
+            max-width: 360px;
+            margin-bottom: 0;
+        }
+        .step {
+            display: flex;
+            gap: 28px;
+            padding: 36px 0;
+            border-bottom: 0.5px solid var(--border);
+        }
+        .step:last-child { border-bottom: none; }
+        .step-n {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            padding-top: 3px;
+            min-width: 26px;
+        }
+        .step h3 {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.015em;
+            margin-bottom: 8px;
+        }
+        .step p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
+
+        /* SVC-002: Services CTA */
+        .services-cta {
+            padding: 110px 44px;
+            text-align: center;
+            background: radial-gradient(ellipse 80% 55% at 50% 100%, rgba(41,151,255,0.07) 0%, transparent 70%);
+        }
+        .services-cta .section-sub { margin-bottom: 36px; }
+
+        /* Shared footer */
+        footer {
+            border-top: 0.5px solid var(--border);
+            padding: 30px 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer span {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            nav {
+                padding: 0 20px;
+                backdrop-filter: saturate(180%) blur(14px);
+                -webkit-backdrop-filter: saturate(180%) blur(14px);
+            }
+            .features, .process { padding-left: 20px; padding-right: 20px; }
+            .services-grid { grid-template-columns: 1fr; padding-left: 20px; padding-right: 20px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            footer { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- SHELL-002: Navigation -->
+<nav>
+    <button class="logo" type="button" aria-label="Otto — go to home" onclick="go('home')">Otto</button>
+    <ul class="nav-links">
+        <li><button id="ln-home" type="button" class="active" aria-current="page" onclick="go('home')">Home</button></li>
+        <li><button id="ln-services" type="button" onclick="go('services')">Services</button></li>
+    </ul>
+    <button class="nav-cta" type="button" onclick="go('services')">Get started</button>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HOME PAGE
+     ═══════════════════════════════════════ -->
+<div class="page active" id="pg-home">
+
+    <!-- ANIM-001 + HOME-001: Hero with particle canvas -->
+    <section class="hero">
+        <canvas id="canvas" aria-hidden="true"><p>Animated particle background</p></canvas>
+        <div class="hero-body">
+            <p class="eyebrow">Introducing Otto</p>
+            <h1 class="hero-title">Software<br>for the web</h1>
+            <p class="hero-sub">Beautiful, high-performance websites for businesses that want to stand out. Designed with precision. Built to last.</p>
+            <div class="btn-row">
+                <button class="btn-primary btn-orange" type="button" onclick="go('services')">See what we build</button>
+                <button class="btn-ghost" type="button" onclick="go('services')">Learn more</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME-002: Features strip -->
+    <section class="features">
+        <p class="section-label reveal">Why Otto</p>
+        <h2 class="section-title reveal">Built different.</h2>
+        <p class="section-sub reveal">We don't use templates. Every pixel is intentional, every line of code purposeful.</p>
+
+        <div class="feature-grid">
+            <div class="feature-card reveal">
+                <svg class="feature-icon" viewBox="0 0 44 44" fill="none">
+                    <rect x="4" y="8" width="36" height="28" rx="3.5" stroke="#2997ff" stroke-width="1.5"/>
+                    <line x1="4" y1="16" x2="40" y2="16" stroke="#2997ff" stroke-width="1.5"/>
+                    <circle cx="10" cy="12" r="1.5" fill="#2997ff"/>
+                    <circle cx="16" cy="12" r="1.5" fill="#2997ff" opacity=".5"/>
+                    <circle cx="22" cy="12" r="1.5" fill="#2997ff" opacity=".3"/>
+                    <rect x="10" y="21" width="24" height="2" rx="1" fill="#2997ff" opacity=".3"/>
+                    <rect x="10" y="27" width="18" height="2" rx="1" fill="#2997ff" opacity=".2"/>
+                    <rect x="10" y="33" width="20" height="2" rx="1" fill="#2997ff" opacity=".15"/>
+                </svg>
+                <h3>Custom Design</h3>
+                <p>Every site is built from scratch to match your brand. No templates, no compromise — just clean, intentional design.</p>
+            </div>
+            <div class="feature-card reveal">
+                <svg class="feature-icon" viewBox="0 0 44 44" fill="none">
+                    <polygon points="22,4 40,14 40,30 22,40 4,30 4,14" stroke="#2997ff" stroke-width="1.5" fill="none"/>
+                    <line x1="22" y1="4" x2="22" y2="40" stroke="#2997ff" stroke-width="1.5" opacity=".35"/>
+                    <line x1="4" y1="14" x2="40" y2="14" stroke="#2997ff" stroke-width="1.5" opacity=".2"/>
+                    <line x1="4" y1="30" x2="40" y2="30" stroke="#2997ff" stroke-width="1.5" opacity=".2"/>
+                    <circle cx="22" cy="22" r="4.5" fill="#2997ff" opacity=".8"/>
+                </svg>
+                <h3>Performance First</h3>
+                <p>100/100 Lighthouse scores. Sub-second load times. Optimised for search engines and the humans using them.</p>
+            </div>
+            <div class="feature-card reveal">
+                <svg class="feature-icon" viewBox="0 0 44 44" fill="none">
+                    <circle cx="22" cy="22" r="14" stroke="#2997ff" stroke-width="1.5"/>
+                    <circle cx="22" cy="22" r="4" fill="#2997ff"/>
+                    <line x1="22" y1="4" x2="22" y2="9"   stroke="#2997ff" stroke-width="1.5" opacity=".5"/>
+                    <line x1="22" y1="35" x2="22" y2="40" stroke="#2997ff" stroke-width="1.5" opacity=".5"/>
+                    <line x1="4"  y1="22" x2="9"  y2="22" stroke="#2997ff" stroke-width="1.5" opacity=".5"/>
+                    <line x1="35" y1="22" x2="40" y2="22" stroke="#2997ff" stroke-width="1.5" opacity=".5"/>
+                </svg>
+                <h3>Always On</h3>
+                <p>99.9% uptime, continuous monitoring, and a team that responds. Your website never sleeps, and neither do we.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME-002: Home CTA -->
+    <section class="home-cta">
+        <p class="section-label reveal">Ready?</p>
+        <h2 class="section-title reveal">Let's build something<br>worth visiting.</h2>
+        <p class="section-sub reveal">From landing pages to full web applications — Otto handles it all.</p>
+        <button class="btn-primary reveal" type="button" onclick="go('services')">View our services</button>
+    </section>
+
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES PAGE
+     ═══════════════════════════════════════ -->
+<div class="page" id="pg-services" inert>
+
+    <!-- SVC-001: Services hero -->
+    <section class="services-hero">
+        <p class="section-label">Our Services</p>
+        <h1 class="section-title">What we<br>build.</h1>
+        <p class="section-sub">End-to-end web software for businesses of every size. We design, build, launch, and maintain.</p>
+    </section>
+
+    <!-- SVC-001: Service cards -->
+    <div class="services-grid">
+        <div class="service-card reveal">
+            <p class="service-num">01</p>
+            <h2>Website Design &amp; Development</h2>
+            <p>Full custom websites designed from the ground up. We handle everything from wireframes to launch — responsive, fast, and built to convert.</p>
+            <div class="tags">
+                <span class="tag">UI / UX</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">CMS</span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <p class="service-num">02</p>
+            <h2>E-Commerce</h2>
+            <p>Online stores that sell. Custom product pages, seamless checkout flows, and payment integration done right — built for scale from day one.</p>
+            <div class="tags">
+                <span class="tag">Shopify</span>
+                <span class="tag">Custom Cart</span>
+                <span class="tag">Payments</span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <p class="service-num">03</p>
+            <h2>Web Applications</h2>
+            <p>Portals, dashboards, SaaS tools, and internal platforms. Complex functionality made simple — with interfaces your users will actually enjoy.</p>
+            <div class="tags">
+                <span class="tag">React / Next.js</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Auth</span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <p class="service-num">04</p>
+            <h2>Ongoing Maintenance</h2>
+            <p>Websites need care. Monthly retainers covering updates, security patches, performance audits, and content changes — so you never have to worry.</p>
+            <div class="tags">
+                <span class="tag">Security</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Updates</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SVC-002: Process steps -->
+    <div class="process">
+        <div class="process-head reveal">
+            <p class="section-label" style="text-align:left">How it works</p>
+            <h2 class="section-title">From idea<br>to live.</h2>
+        </div>
+        <div class="step reveal">
+            <span class="step-n">01</span>
+            <div>
+                <h3>Discovery</h3>
+                <p>We learn your business, your users, and your goals. One call is usually enough to get everything we need to start.</p>
+            </div>
+        </div>
+        <div class="step reveal">
+            <span class="step-n">02</span>
+            <div>
+                <h3>Design</h3>
+                <p>Full high-fidelity designs before a single line of code is written. You see exactly what you're getting — and we refine until it's right.</p>
+            </div>
+        </div>
+        <div class="step reveal">
+            <span class="step-n">03</span>
+            <div>
+                <h3>Build</h3>
+                <p>Clean, performant code. We build in the open — you'll have access to progress throughout and can request changes at any point.</p>
+            </div>
+        </div>
+        <div class="step reveal">
+            <span class="step-n">04</span>
+            <div>
+                <h3>Launch &amp; Beyond</h3>
+                <p>We handle deployment, DNS, and go-live. Then we stick around — either on a retainer or on-call when you need us.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SVC-002: Services CTA -->
+    <section class="services-cta">
+        <p class="section-label reveal">Start today</p>
+        <h2 class="section-title reveal">Ready to work<br>with Otto?</h2>
+        <p class="section-sub reveal">Tell us what you need. We'll tell you how we'd build it.</p>
+        <button class="btn-primary reveal" type="button" onclick="window.location.href='mailto:hello@otto.com'">Get in touch</button>
+    </section>
+
+</div>
+
+<!-- Shared site footer (Fix #13: single footer outside both pages) -->
+<footer id="site-footer">
+    <span>© <span id="copy-year"></span> Otto. All rights reserved.</span>
+    <span>Software for the web.</span>
+</footer>
+
+<script>
+// ── SHELL-002: Page routing ───────────────────────────────────────────────
+let navTimer = null;  // Fix #3: track timer to prevent race condition
+function go(name) {
+    // Fix #5: validate page exists before touching any state
+    if (!document.getElementById('pg-' + name)) return;
+    const current = document.querySelector('.page.active');
+    if (current && current.id === 'pg-' + name) return;
+    document.querySelectorAll('.page').forEach(p => { p.style.opacity = '0'; });
+    document.querySelectorAll('.nav-links button').forEach(b => {
+        b.classList.remove('active');
+        b.removeAttribute('aria-current');  // Fix #11: clear aria-current from all
+    });
+    clearTimeout(navTimer);  // Fix #3: cancel any queued navigation
+    navTimer = setTimeout(() => {
+        document.querySelectorAll('.page').forEach(p => {
+            p.classList.remove('active');
+            p.style.opacity = '';
+            p.setAttribute('inert', '');  // Fix #2: mark all pages inert
+        });
+        const pg = document.getElementById('pg-' + name);
+        if (!pg) return;
+        pg.classList.add('active');
+        pg.removeAttribute('inert');  // Fix #2: remove inert from newly active page
+        requestAnimationFrame(() => requestAnimationFrame(() => { pg.style.opacity = ''; }));
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        const navBtn = document.getElementById('ln-' + name);
+        if (navBtn) {
+            navBtn.classList.add('active');
+            navBtn.setAttribute('aria-current', 'page');  // Fix #11: set aria-current
+        }
+        attachReveal();
+        if (name === 'home') startLoop(); else stopLoop();
+    }, 340);  // Fix #7: bumped from 300 to 340 to outlast 320ms CSS transition
+}
+
+// ── Scroll reveal ─────────────────────────────────────────────────────────
+let revealIO = null;
+function attachReveal() {
+    if (revealIO) revealIO.disconnect();
+    const active = document.querySelector('.page.active');
+    revealIO = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealIO.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    active.querySelectorAll('.reveal:not(.in)').forEach(el => revealIO.observe(el));
+}
+attachReveal();
+
+// ── Particle Engine ───────────────────────────────────────────────────────
+const canvas = document.getElementById('canvas');
+const ctx    = canvas.getContext('2d');
+
+let W, H;
+const N = 320;
+const STATE = { FLOAT: 0, FORM: 1, HOLD: 2, DISSOLVE: 3 };
+let state = STATE.FLOAT, timer = 0;
+let particles = [], targets = [];
+let rafId = null;
+function startLoop() { if (!rafId) rafId = requestAnimationFrame(tick); }
+function stopLoop()  { if (rafId) { cancelAnimationFrame(rafId); rafId = null; } }
+
+function resize() {
+    const dpr = window.devicePixelRatio || 1;
+    W = canvas.offsetWidth;
+    H = canvas.offsetHeight;
+    canvas.width  = W * dpr;
+    canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    buildTargets();
+    // Fix #6: remap particle targets if we're mid-formation so coordinates stay valid
+    if (state === STATE.FORM || state === STATE.HOLD) {
+        setTargets('form');
+    }
+}
+
+// ── Software UI target shape — layered dashboard ──────────────────────────
+// Each target carries a `d` (delay in frames) so the UI assembles in stages:
+//   d=0   → nav bar (structure first)
+//   d=22  → sidebar + outer shell
+//   d=45+ → card borders (staggered per card)
+//   d=75+ → card content lines + table rows (data last)
+function buildTargets() {
+    targets = [];
+    const s   = Math.min(W, H) * 0.0025;
+    const cx  = W / 2, cy = H * 0.51;
+    const uiW = 285 * s, uiH = 205 * s;
+    const L = cx - uiW / 2, T = cy - uiH / 2;
+    const R = cx + uiW / 2, B = cy + uiH / 2;
+    const navH  = 21 * s;
+    const sideW = 56 * s;
+
+    // helpers
+    const pt  = (x, y, d) => targets.push({ x, y, d });
+    const row = (x0, x1, y, n, d) => { for (let i = 0; i < n; i++) pt(x0 + (i/(n-1))*(x1-x0), y, d); };
+    const col = (x, y0, y1, n, d) => { for (let i = 0; i < n; i++) pt(x, y0 + (i/(n-1))*(y1-y0), d); };
+    const arc = (cx2, cy2, r, n, d) => { for (let a = 0; a < n; a++) pt(cx2 + Math.cos(a/n*Math.PI*2)*r, cy2 + Math.sin(a/n*Math.PI*2)*r, d); };
+
+    // ── Layer 0: Nav bar (d=0) ────────────────────────────────────────────
+    row(L, R,      T,        18, 0);   // top edge
+    row(L, R,      T+navH,   15, 0);   // nav bottom divider
+    col(L, T,      T+navH,    4, 0);   // left
+    col(R, T,      T+navH,    4, 0);   // right
+    arc(L+uiW*0.07, T+navH*0.5, 2.5*s, 5, 0);   // dot 1
+    arc(L+uiW*0.12, T+navH*0.5, 2.5*s, 5, 0);   // dot 2
+    arc(L+uiW*0.17, T+navH*0.5, 2.5*s, 5, 0);   // dot 3
+    row(cx-24*s,  cx+24*s,  T+navH*0.5,  7, 6);  // search bar centre
+    row(R-32*s,   R-7*s,    T+navH*0.26, 5, 6);  // nav action btn top
+    row(R-32*s,   R-7*s,    T+navH*0.74, 5, 6);  // nav action btn bottom
+
+    // ── Layer 1: Outer shell + sidebar (d=22) ────────────────────────────
+    col(L,       T+navH, B,  15, 22);   // outer left
+    col(R,       T+navH, B,  15, 22);   // outer right
+    row(L, R,    B,      20, 22);       // outer bottom
+    col(L+sideW, T+navH, B,  16, 22);   // sidebar right divider
+    // sidebar menu items (5 items, staggered)
+    for (let m = 0; m < 5; m++) {
+        const my = T + navH + 14*s + m*19*s;
+        row(L+7*s, L+sideW-7*s, my, 7, 28 + m*6);
+    }
+
+    // ── Layer 2: Card borders (d=46+ per card) ───────────────────────────
+    const cPad = 9*s;
+    const cL   = L + sideW + cPad;
+    const cT   = T + navH  + cPad;
+    const cW   = (R - cL - cPad * 2) / 2;
+    const cH   = (uiH - navH) * 0.40;
+
+    for (let r = 0; r < 2; r++) {
+        for (let c = 0; c < 2; c++) {
+            const x  = cL + c * (cW + cPad);
+            const y  = cT + r * (cH + cPad);
+            const d  = 46 + (r * 2 + c) * 10;
+            row(x,    x+cW, y,    10, d);   // card top
+            col(x+cW, y,    y+cH,  6, d);   // card right
+            row(x,    x+cW, y+cH, 10, d);   // card bottom
+            col(x,    y,    y+cH,  6, d);   // card left
+        }
+    }
+
+    // ── Layer 3: Card content + table rows (d=76+) ───────────────────────
+    for (let r = 0; r < 2; r++) {
+        for (let c = 0; c < 2; c++) {
+            const x = cL + c * (cW + cPad);
+            const y = cT + r * (cH + cPad);
+            const d = 76 + (r * 2 + c) * 8;
+            row(x+5*s, x+5*s+cW*0.36, y+cH*0.26, 5, d);       // metric value
+            row(x+5*s, x+5*s+cW*0.70, y+cH*0.55, 6, d+7);     // label line
+            row(x+5*s, x+5*s+cW*0.50, y+cH*0.74, 4, d+7);     // sub-label
+        }
+    }
+    // table rows below cards
+    const tY = cT + 2*(cH + cPad) + 3*s;
+    const tW = R - cL - cPad;
+    for (let r = 0; r < 3; r++) row(cL, cL+tW, tY + r*13*s, 13, 94 + r*10);
+}
+
+// ── Particle class — cool grey palette ───────────────────────────────────
+class Particle {
+    constructor() {
+        this.x   = Math.random() * (W || 1400);
+        this.y   = Math.random() * (H || 900);
+        this.tx  = this.x; this.ty = this.y;
+        this.vx  = (Math.random() - 0.5) * 0.26;
+        this.vy  = (Math.random() - 0.5) * 0.26;
+        this.r   = Math.random() * 1.3 + 0.4;
+        this.a   = Math.random() * 0.13 + 0.03;
+        this.ta  = this.a;
+        // cool grey: slight blue tint, very low saturation
+        this.hue = 212 + Math.random() * 16;
+        this.sat = 5   + Math.random() * 9;
+        this.lit = 60  + Math.random() * 22;
+        this.spd = 0.018 + Math.random() * 0.016;  // slow
+        this.d   = 0;   // formation delay
+        // Fix #9: cache color string to avoid per-frame allocation
+        this._cachedColor = '';
+        this._lastA = -1;
+    }
+    // color getter removed — see per-frame cache logic in tick()
+}
+
+// ── Target assignment ─────────────────────────────────────────────────────
+function setTargets(mode) {
+    if (mode === 'form') {
+        // Sort targets by delay so earlier layers go to earlier particles (preserves staging)
+        const byLayer = [...targets].sort((a, b) => a.d - b.d);
+        particles.forEach((p, i) => {
+            if (i < byLayer.length) {
+                p.tx  = byLayer[i].x;
+                p.ty  = byLayer[i].y;
+                p.ta  = 0.62 + Math.random() * 0.32;
+                p.d   = byLayer[i].d;
+            } else {
+                p.tx  = Math.random() * W;
+                p.ty  = Math.random() * H;
+                p.ta  = 0.03;
+                p.d   = 0;
+            }
+        });
+    } else if (mode === 'dissolve') {
+        particles.forEach((p, i) => {
+            const ang  = Math.random() * Math.PI * 2;
+            const dist = 130 + Math.random() * 210;
+            p.tx  = p.x + Math.cos(ang) * dist;
+            p.ty  = p.y + Math.sin(ang) * dist + 20;  // slight downward drift
+            p.ta  = 0.015;
+            p.d   = i % 60;  // stagger dissolve in ~1s waves
+        });
+    } else {
+        particles.forEach(p => {
+            p.tx = Math.random() * W;
+            p.ty = Math.random() * H;
+            p.ta = Math.random() * 0.13 + 0.03;
+            p.d  = 0;
+        });
+    }
+}
+
+// ── Settled check — respects per-particle delay ───────────────────────────
+function settled(thresh) {
+    const ready = particles.filter(p => timer > p.d + 20);
+    if (ready.length < N * 0.55) return false;
+    return ready.filter(p => Math.hypot(p.x-p.tx, p.y-p.ty) < 3).length / ready.length > thresh;
+}
+
+// ── Render loop ───────────────────────────────────────────────────────────
+function tick() {
+    rafId = requestAnimationFrame(tick);
+    ctx.clearRect(0, 0, W, H);
+    timer++;
+
+    // State machine — else-if chain (Fix: was four sequential ifs, could double-advance)
+    if (state === STATE.FLOAT    && timer > 170)    { state = STATE.FORM;     timer = 0; setTargets('form'); }
+    else if (state === STATE.FORM     && settled(0.80))  { state = STATE.HOLD;     timer = 0; }
+    else if (state === STATE.HOLD     && timer > 230)    { state = STATE.DISSOLVE; timer = 0; setTargets('dissolve'); }
+    else if (state === STATE.DISSOLVE && settled(0.85))  { state = STATE.FLOAT;    timer = 0; setTargets('float'); }
+
+    // Fix #4: batch connecting lines into a single path — one stroke() call
+    if (state === STATE.FORM || state === STATE.HOLD) {
+        ctx.beginPath();
+        ctx.lineWidth = 0.35;
+        ctx.strokeStyle = 'rgba(155,160,170,0.12)';
+        for (let i = 0; i < N; i += 5) {
+            for (let j = i + 1; j < N; j += 5) {
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
+                if (dx*dx + dy*dy < 900) {
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                }
+            }
+        }
+        ctx.stroke();
+    }
+
+    // Update + draw particles
+    particles.forEach(p => {
+        if (state === STATE.FLOAT) {
+            p.x += p.vx; p.y += p.vy;
+            if (p.x < 0 || p.x > W) p.vx *= -1;
+            if (p.y < 0 || p.y > H) p.vy *= -1;
+        } else if (state === STATE.FORM) {
+            if (timer > p.d) {
+                p.x += (p.tx - p.x) * p.spd;
+                p.y += (p.ty - p.y) * p.spd;
+            }
+        } else if (state === STATE.HOLD) {
+            p.x += (p.tx - p.x) * 0.012;
+            p.y += (p.ty - p.y) * 0.012;
+        } else {
+            if (timer > p.d) {
+                p.x += (p.tx - p.x) * (p.spd * 2.2);
+                p.y += (p.ty - p.y) * (p.spd * 2.2);
+            }
+        }
+        p.a += (p.ta - p.a) * 0.042;
+
+        // Fix #9: only rebuild color string when alpha changes significantly
+        if (Math.abs(p.a - p._lastA) > 0.004) {
+            p._cachedColor = `hsla(${p.hue},${p.sat}%,${p.lit}%,${p.a})`;
+            p._lastA = p.a;
+        }
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p._cachedColor;
+        ctx.fill();
+    });
+}
+
+// Boot
+let resizeTimer;
+window.addEventListener('resize', () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(resize, 120); });
+// Fix #1: only restart particle loop if home page is currently active
+document.addEventListener('visibilitychange', () => {
+    document.hidden ? stopLoop() : (document.getElementById('pg-home').classList.contains('active') && startLoop());
+});
+// Fix #14: set copyright year dynamically
+document.getElementById('copy-year').textContent = new Date().getFullYear();
+resize();
+particles = Array.from({ length: N }, () => new Particle());
+setTargets('float');
+startLoop();
+</script>
+</body>
+</html>

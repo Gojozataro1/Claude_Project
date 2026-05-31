@@ -1,10 +1,36 @@
+# ── Secrets & credentials ────────────────────────────────────────────────────
 .env
+.env.*
+!.env.example
+.mcp.json
+
+# ── Claude Code local config (settings.local.json, MCP enablement, hooks) ───
+.claude/
+
+# ── Python ───────────────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
-.DS_Store
+*.pyd
 *.egg-info/
 dist/
+build/
 .venv/
 venv/
+env/
+
+# ── Databases (generated at runtime by week5_agent.py) ───────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Snapshots / generated output ─────────────────────────────────────────────
 snapshots/
+
+# ── macOS ────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ── VS Code workspace file (local paths, not useful to others) ───────────────
+*.code-workspace
