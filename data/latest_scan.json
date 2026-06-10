@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-06-09T11:16:23.197236+00:00",
-  "hostname": "sjc22-bt147-a52c5489-c587-4f9b-b12b-b95f20d920eb-F2859902C8D7.local",
+  "scan_timestamp": "2026-06-10T11:39:11.702572+00:00",
+  "hostname": "sat12-dp146-5a0c0f53-ad7a-4956-982a-2a0061c591e4-6EBB01AA4B16.local",
   "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 47.98,
-        "percent": 19.0
+        "free_gb": 47.88,
+        "percent": 19.1
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 47.98,
+        "free_gb": 47.88,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.31,
-        "free_gb": 47.98,
+        "free_gb": 47.88,
         "percent": 13.2
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 47.98,
+        "free_gb": 47.88,
         "percent": 0.1
       },
       {
@@ -73,36 +73,18 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.32,
-        "free_gb": 47.98,
+        "used_gb": 275.42,
+        "free_gb": 47.88,
         "percent": 85.2
       },
       {
-        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex",
+        "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
         "device": "/dev/disk5s1",
         "fstype": "apfs",
         "total_gb": 0.0,
         "used_gb": 0.0,
         "free_gb": 0.0,
-        "percent": 18.3
-      },
-      {
-        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex 1",
-        "device": "/dev/disk7s1",
-        "fstype": "apfs",
-        "total_gb": 0.0,
-        "used_gb": 0.0,
-        "free_gb": 0.0,
-        "percent": 18.3
-      },
-      {
-        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex 2",
-        "device": "/dev/disk9s1",
-        "fstype": "apfs",
-        "total_gb": 0.0,
-        "used_gb": 0.0,
-        "free_gb": 0.0,
-        "percent": 18.3
+        "percent": 18.0
       }
     ],
     "large_files": [],
@@ -182,6 +164,13 @@
       {
         "pid": 82,
         "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 83,
+        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -350,13 +339,6 @@
       {
         "pid": 122,
         "name": "usbmuxd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 123,
-        "name": "securityd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
