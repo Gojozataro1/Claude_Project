@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-06-15T13:56:14.726210+00:00",
-  "hostname": "iad20-gt1023-650165fa-3ebc-42c6-9ab5-1f28d3d19934-92F6DE6AB88A.local",
+  "scan_timestamp": "2026-06-16T12:54:25.914792+00:00",
+  "hostname": "iad20-fj918-7ad12866-39ab-4c4f-a2ef-36c30fd58fd1-36CFC7BFEE2B.local",
   "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 48.12,
+        "free_gb": 48.07,
         "percent": 19.0
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 48.12,
+        "free_gb": 48.07,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.31,
-        "free_gb": 48.12,
+        "free_gb": 48.07,
         "percent": 13.2
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 48.12,
+        "free_gb": 48.07,
         "percent": 0.1
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 275.18,
-        "free_gb": 48.12,
+        "used_gb": 275.23,
+        "free_gb": 48.07,
         "percent": 85.1
       },
       {
@@ -108,7 +108,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 31.8
+        "size_mb": 30.7
       }
     ],
     "trash_size_mb": 0.0,
@@ -164,6 +164,13 @@
       {
         "pid": 82,
         "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 83,
+        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -332,13 +339,6 @@
       {
         "pid": 122,
         "name": "usbmuxd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 123,
-        "name": "securityd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
