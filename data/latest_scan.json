@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-06-24T10:50:52.862916+00:00",
-  "hostname": "iad20-gt1024-c1fe7f7b-8eb3-427d-bc50-a3b56f920f21-6A234920BA33.local",
-  "macos_version": "26.4",
+  "scan_timestamp": "2026-06-25T10:42:21.628633+00:00",
+  "hostname": "sat12-bq163-98f5694d-bf5e-497a-b06b-8d7f4553394b-4675E129EE41.local",
+  "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
     "partitions": [
@@ -10,9 +10,9 @@
         "device": "/dev/disk3s1s1",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 12.56,
-        "free_gb": 110.31,
-        "percent": 10.2
+        "used_gb": 11.27,
+        "free_gb": 48.74,
+        "percent": 18.8
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 110.31,
+        "free_gb": 48.74,
         "percent": 0.0
       },
       {
@@ -28,18 +28,18 @@
         "device": "/dev/disk3s2",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 7.19,
-        "free_gb": 110.31,
-        "percent": 6.1
+        "used_gb": 7.31,
+        "free_gb": 48.74,
+        "percent": 13.0
       },
       {
         "mountpoint": "/System/Volumes/Update",
         "device": "/dev/disk3s4",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 0.0,
-        "free_gb": 110.31,
-        "percent": 0.0
+        "used_gb": 0.04,
+        "free_gb": 48.74,
+        "percent": 0.1
       },
       {
         "mountpoint": "/System/Volumes/xarts",
@@ -66,29 +66,20 @@
         "total_gb": 0.52,
         "used_gb": 0.0,
         "free_gb": 0.52,
-        "percent": 0.1
+        "percent": 0.0
       },
       {
         "mountpoint": "/System/Volumes/Data",
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 211.62,
-        "free_gb": 110.31,
-        "percent": 65.7
-      },
-      {
-        "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
-        "device": "/dev/disk5s1",
-        "fstype": "apfs",
-        "total_gb": 0.55,
-        "used_gb": 0.52,
-        "free_gb": 0.02,
-        "percent": 95.9
+        "used_gb": 274.56,
+        "free_gb": 48.74,
+        "percent": 84.9
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
-        "device": "/dev/disk7s1",
+        "device": "/dev/disk5s1",
         "fstype": "apfs",
         "total_gb": 0.0,
         "used_gb": 0.0,
@@ -97,27 +88,27 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.48,
+    "cache_size_gb": 0.41,
     "cache_top_dirs": [
       {
         "name": "bazel",
         "size_mb": 184.1
       },
       {
-        "name": "Homebrew",
-        "size_mb": 73.3
-      },
-      {
-        "name": "GeoServices",
-        "size_mb": 60.6
-      },
-      {
         "name": "bazelisk",
         "size_mb": 60.4
       },
       {
+        "name": "GeoServices",
+        "size_mb": 41.5
+      },
+      {
+        "name": "Homebrew",
+        "size_mb": 39.0
+      },
+      {
         "name": "com.apple.helpd",
-        "size_mb": 32.4
+        "size_mb": 31.2
       }
     ],
     "trash_size_mb": 0.0,
@@ -157,197 +148,197 @@
         "status": "sleeping"
       },
       {
-        "pid": 86,
+        "pid": 82,
         "name": "logd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 87,
+        "pid": 83,
         "name": "smd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 88,
+        "pid": 84,
         "name": "UserEventAgent",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 89,
+        "pid": 85,
         "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 90,
+        "pid": 86,
         "name": "fseventsd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 91,
+        "pid": 87,
         "name": "mediaremoted",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 93,
+        "pid": 89,
         "name": "systemstats",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 95,
+        "pid": 91,
         "name": "accessoryupdater",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 96,
-        "name": "uarpassetmanager",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 97,
+        "pid": 92,
         "name": "configd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 98,
+        "pid": 93,
         "name": "endpointsecurity",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 99,
+        "pid": 94,
         "name": "powerd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 100,
+        "pid": 95,
         "name": "IOMFB_bics_daemo",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 102,
+        "pid": 97,
         "name": "amfid",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 104,
+        "pid": 99,
         "name": "remoted",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 106,
+        "pid": 101,
         "name": "keybagd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 107,
+        "pid": 102,
         "name": "softwareupdated",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 108,
+        "pid": 103,
         "name": "corespeechd_syst",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 114,
+        "pid": 109,
         "name": "mds",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 115,
+        "pid": 110,
         "name": "iconservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 116,
+        "pid": 111,
         "name": "kernelmanagerd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 117,
+        "pid": 112,
         "name": "diskarbitrationd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 120,
+        "pid": 115,
         "name": "coreduetd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 121,
+        "pid": 116,
         "name": "syslogd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 123,
+        "pid": 119,
         "name": "thermalmonitord",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 124,
-        "name": "contextstored",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 125,
-        "name": "xprotectd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 126,
+        "pid": 120,
         "name": "opendirectoryd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 122,
+        "name": "launchservicesd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 123,
+        "name": "timed",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 124,
+        "name": "usbmuxd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -609,6 +600,223 @@
         "reason": "World-readable sensitive file"
       },
       {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/platform_root_cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 749,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/platform_root_key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 639,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 603,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_oid5.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_oid4.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_oid1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_oid2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_root2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 570,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_require2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_require_no_policies.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 595,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 648,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_root.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 566,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 887,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_mapped.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 989,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 635,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_none.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 574,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_leaf_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 583,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_require_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 680,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 664,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_root_cross_inhibit_mapping.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 899,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/tls/testdata/example-cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 587,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/tls/testdata/example-key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
         "path": "/Users/runner/hostedtoolcache/go/1.25.11/arm64/src/crypto/x509/platform_root_cert.pem",
         "permissions_octal": "0o644",
         "size_bytes": 749,
@@ -820,34 +1028,6 @@
       },
       {
         "path": "/Users/runner/hostedtoolcache/go/1.25.11/arm64/src/crypto/tls/testdata/example-key.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 227,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/go/1.23.12/arm64/src/crypto/x509/platform_root_cert.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 749,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/go/1.23.12/arm64/src/crypto/x509/platform_root_key.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 227,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/go/1.23.12/arm64/src/crypto/tls/testdata/example-cert.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 587,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/go/1.23.12/arm64/src/crypto/tls/testdata/example-key.pem",
         "permissions_octal": "0o644",
         "size_bytes": 227,
         "severity": "Critical",
@@ -3906,6 +4086,2855 @@
         "reason": "World-readable sensitive file"
       },
       {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/test-file.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1944,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/test-dir.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1939,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subsubCA11Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy5subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/NegativeSerialNumberCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 914,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedinhibitPolicyMappingTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 952,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidRFC822nameConstraintsTest24EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 993,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P1SelfIssuedsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 979,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/keyUsageNotCriticalcRLSignFalseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN3subCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1022,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddistributionPointTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1069,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDSAParameterInheritanceTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 574,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidpathLenConstraintTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitAnyPolicyTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidBadCRLSignatureTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcRLIssuerTest34EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1044,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/basicConstraintsNotCriticalCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 918,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UserNoticeQualifierTest17EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1014,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidGeneralizedTimenotBeforeDateTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subCA4Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlySomeReasonsCA3Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 908,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidNoissuingDistributionPointTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1069,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidNegativeSerialNumberTest15EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 937,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UserNoticeQualifierTest15EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1026,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy5CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P1SelfIssuedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 931,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP123subCAP12Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 931,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidpathLenConstraintTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 947,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitAnyPolicyTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 923,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNandRFC822nameConstraintsTest28EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1049,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping0subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 970,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1009,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidBasicSelfIssuedOldWithNewTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 947,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/TwoCRLsCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 900,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/P1anyPolicyMapping1to2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1329,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1subsubCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 922,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsRFC822CA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BadnotAfterDateCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidRFC822nameConstraintsTest26EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 982,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/Invalidpre2000CRLnextUpdateTest12EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 937,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/SeparateCertificateandCRLKeysCRLSigningCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UTF8StringCaseInsensitiveMatchCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidBasicSelfIssuedNewWithOldTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 947,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidOldCRLnextUpdateTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 929,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddistributionPointTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1069,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/TrustAnchorRootCertificate.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 843,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSelfIssuedpathLenConstraintTest15EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidEEnotBeforeDateTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 913,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP123subsubCAP12P1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlyContainsUserCertsTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 952,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P1subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 976,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/P12Mapping1to3subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 980,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 940,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidRFC822nameConstraintsTest22EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 982,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDSASignaturesTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 835,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP123CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 949,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BadCRLIssuerNameCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 911,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSeparateCertificateandCRLKeysTest21EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 960,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsURI2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy0subsubsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DSACACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1045,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidURInameConstraintsTest37EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 987,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlySomeReasonsTest21EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1153,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping5subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidkeyUsageCriticalkeyCertSignFalseTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 962,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/basicConstraintsCriticalcAFalseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 923,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest18EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 932,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddeltaCRLTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1091,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcRLIssuerTest32EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1136,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcAFalseTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsRFC822CA3Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNSnameConstraintsTest31EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 981,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint1SelfIssuedsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNSnameConstraintsTest33EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 970,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subsubCA00Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedrequireExplicitPolicyTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddeltaCRLTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1094,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidonlySomeReasonsTest19EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1151,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidbasicConstraintsNotCriticalTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 948,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidcRLIssuerTest30EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1156,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/SeparateCertificateandCRLKeysCA2CRLSigningCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy5subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 937,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1SelfIssuedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 917,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidNameChainingWhitespaceTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 923,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidNegativeSerialNumberTest14EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/GoodsubCAPanyPolicyMapping1to2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 968,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA3cRLIssuerCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1010,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidURInameConstraintsTest35EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 987,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidBadCRLIssuerNameTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 930,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddistributionPointTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 982,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlySomeReasonsCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 908,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidrequireExplicitPolicyTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 918,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/keyUsageNotCriticalCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidkeyUsageNotCriticalcRLSignFalseTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 962,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddistributionPointTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 927,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/P12Mapping1to3CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 978,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidcRLIssuerTest29EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1065,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP3CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSelfIssuedpathLenConstraintTest17EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 941,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidWrongCRLTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint0SelfIssuedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidrequireExplicitPolicyTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddeltaCRLTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1091,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest20EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlyContainsCACertsTest12EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 931,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitAnyPolicyTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidTwoCRLsTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 906,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNandRFC822nameConstraintsTest29EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1051,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNSnameConstraintsTest30EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 976,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping5CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 935,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidonlyContainsCACertsTest13EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 946,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddeltaCRLTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1093,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 916,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidUTF8StringCaseInsensitiveMatchTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 962,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidNameChainingWhitespaceTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSelfIssuedinhibitAnyPolicyTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 939,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy0subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 930,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidinhibitAnyPolicyTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 931,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy7subsubsubCARE2RE4Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 954,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/keyUsageNotCriticalkeyCertSignFalseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 928,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsRFC822CA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 958,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint1SelfIssuedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidMappingFromanyPolicyTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidURInameConstraintsTest36EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 997,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy10subsubsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 944,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/MappingToanyPolicyCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 965,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidURInameConstraintsTest34EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 994,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidrequireExplicitPolicyTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidRevokedCATest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN3subCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 995,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1SelfIssuedsubCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy0subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedinhibitPolicyMappingTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 952,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy10CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/distributionPoint1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/SeparateCertificateandCRLKeysCA2CertificateSigningCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy4CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/RFC3280OptionalAttributeTypesCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 992,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UnknownCRLEntryExtensionCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidEESignatureTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 893,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNSnameConstraintsTest32EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 976,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UserNoticeQualifierTest16EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1145,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP2subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 901,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddeltaCRLTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1091,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/RolloverfromPrintableStringtoUTF8StringCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 935,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicyTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 921,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 916,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcRLIssuerTest35EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1128,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy7subsubCARE2RE4Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 964,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidpathLenConstraintTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 930,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy0CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 940,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P12subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 998,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BasicSelfIssuedOldKeyNewWithOldCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1067,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/WrongCRLCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 901,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UTF8StringEncodedNamesCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 902,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidonlySomeReasonsTest18EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1035,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidMissingbasicConstraintsTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 940,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP12subCAP1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 912,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy2SelfIssuedsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN1SelfIssuedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 921,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA3Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidRFC3280MandatoryAttributeTypesTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1011,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subsubsubCA41XCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 939,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidBasicSelfIssuedCRLSigningKeyTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 958,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 943,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcRLIssuerTest31EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1136,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidrequireExplicitPolicyTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1subCAIAP5Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 941,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidcRLIssuerTest28EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1156,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidEEnotAfterDateTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 912,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy5subsubsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddistributionPointTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 982,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidRFC3280OptionalAttributeTypesTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1022,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidUnknownCRLExtensionTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 935,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlySomeReasonsCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 908,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddistributionPointTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1028,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidkeyUsageNotCriticalTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 932,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/keyUsageCriticalkeyCertSignFalseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 927,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDNS2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddeltaCRLIndicatorNoBaseTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlySomeReasonsTest20EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1153,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/AnyPolicyTest14EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 903,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1113,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSeparateCertificateandCRLKeysTest20EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 960,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P1subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 982,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP123subsubCAP12P2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/GeneralizedTimeCRLnextUpdateCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 920,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint0subCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 923,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/MissingbasicConstraintsCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 899,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidUnknownCRLEntryExtensionTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 946,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidrequireExplicitPolicyTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 917,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/AllCertificatesNoPoliciesTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 898,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/SeparateCertificateandCRLKeysCertificateSigningCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidNameUIDsTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 901,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitAnyPolicyTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcAFalseTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidPolicyMappingTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/NoPoliciesCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 878,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidNameChainingTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 914,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UnknownCRLExtensionCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 913,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 917,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP1234CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 964,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest19EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidcRLIssuerTest33EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1134,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy4subsubsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P12CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 953,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 927,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subsubsubCA11XCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 939,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/GoodsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest15EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 962,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedrequireExplicitPolicyTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/GoodCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 896,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidkeyUsageNotCriticalkeyCertSignFalseTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 963,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/Invalidpre2000UTCEEnotAfterDateTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy4subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 930,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidBasicSelfIssuedNewWithOldTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 945,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy5CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 940,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidRFC822nameConstraintsTest23EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 980,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 931,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidIDPwithindirectCRLTest22EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 923,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddistributionPointTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 984,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN1subCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1051,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/AllCertificatesanyPolicyTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 914,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidpathLenConstraintTest14EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 955,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy7subCARE2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 952,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedpathLenConstraintTest16EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 944,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidLongSerialNumberTest17EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 946,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/anyPolicyCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 911,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidIDPwithindirectCRLTest26EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1019,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidCertificatePathTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 893,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint0CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 913,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidMissingCRLTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNandRFC822nameConstraintsTest27EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1044,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSeparateCertificateandCRLKeysTest19EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 958,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/P1Mapping1to234subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1002,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/Validpre2000UTCnotBeforeDateTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 920,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedinhibitPolicyMappingTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 954,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlySomeReasonsCA4Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 908,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BadCRLSignatureCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 909,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 956,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP12CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlyContainsAttributeCertsCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 918,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/Mapping1to2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 960,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/deltaCRLIndicatorNoBaseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 917,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/deltaCRLCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 901,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidCAnotBeforeDateTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 927,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy10subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy7CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/distributionPoint2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidNameChainingOrderTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 999,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidGeneralizedTimeCRLnextUpdateTest13EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 949,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidRFC822nameConstraintsTest21EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 991,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/NoissuingDistributionPointCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidUnknownCRLExtensionTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddeltaCRLTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1093,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP1234subCAP123Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 948,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidRolloverfromPrintableStringtoUTF8StringTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 965,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA6Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN3CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1008,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest17EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 962,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlyContainsUserCertsCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 913,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP1234subsubCAP123P12Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 947,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidRFC822nameConstraintsTest25EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 991,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping0CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 935,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDNS1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 954,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy10subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 932,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidpathLenConstraintTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 935,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/LongSerialNumberCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pre2000CRLnextUpdateCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 914,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest13EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 991,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/deltaCRLCA3Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 901,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy5subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 913,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BasicSelfIssuedNewKeyOldWithNewCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidpathLenConstraintTest12EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/AllCertificatesSamePoliciesTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 941,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1109,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSelfIssuedinhibitAnyPolicyTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 939,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlySomeReasonsTest17EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy2SelfIssuedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 927,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy5subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 930,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1subCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 915,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidNameChainingCapitalizationTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 922,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidIDPwithindirectCRLTest24EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1016,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy2subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 930,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P12subsubCAIPM5Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1006,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P12subCAIPM5Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 973,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddistributionPointTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1071,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlySomeReasonsTest15EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BasicSelfIssuedCRLSigningKeyCRLCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/NameOrderingCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 980,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/basicConstraintsNotCriticalcAFalseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidpathLenConstraintTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 953,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN5CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1123,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UIDCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 900,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlyContainsAttributeCertsTest14EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 945,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest12EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 914,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 985,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UserNoticeQualifierTest18EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1240,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidGeneralizedTimenotAfterDateTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN1subCA3Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 995,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNSnameConstraintsTest38EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 969,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitPolicyMappingTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 947,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest13EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 929,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidpathLenConstraintTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/keyUsageCriticalcRLSignFalseCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 923,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDSASignatureTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 851,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/OverlappingPoliciesTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 948,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/deltaCRLCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 901,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy4subsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidLongSerialNumberTest18EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 948,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subCA0Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedinhibitPolicyMappingTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 954,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping1P12subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1018,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest16EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 962,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidUnknownNotCriticalCertificateExtensionTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 952,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/RFC3280MandatoryAttributeTypesCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 980,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA5Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 913,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping5subsubsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 982,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest14EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 929,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitPolicyMappingTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 950,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidCASignatureTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 899,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/MappingFromanyPolicyCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 961,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidUnknownCriticalCertificateExtensionTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 954,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/NoCRLCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 898,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DifferentPoliciesTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 941,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidUTF8StringEncodedNamesTest9EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP2subCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 918,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA4cRLIssuerCert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1144,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidBasicSelfIssuedCRLSigningKeyTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 958,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subsubCA41Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 934,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitPolicyMappingTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 943,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidinhibitPolicyMappingTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BasicSelfIssuedOldKeyCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 917,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest14EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidBasicSelfIssuedCRLSigningKeyTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 956,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSelfIssuedrequireExplicitPolicyTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 920,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidLongSerialNumberTest16EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 946,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidPolicyMappingTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 928,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidcRLIssuerTest27EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 999,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1095,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN1subCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1079,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidRevokedEETest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 903,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP123subsubsubCAP12P2P1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 936,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidBasicSelfIssuedOldWithNewTest1EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 945,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint0subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 922,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/OldCRLnextUpdateCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidIDPwithindirectCRLTest23EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BasicSelfIssuedNewKeyCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 917,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 956,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidCAnotAfterDateTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/AllCertificatesSamePoliciesTest13EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 958,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PoliciesP12subsubCAP1P2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 922,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidpathLenConstraintTest11EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 940,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/P1Mapping1to234CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1017,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/RevokedsubCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 897,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidSelfIssuedinhibitPolicyMappingTest7EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 949,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidkeyUsageCriticalcRLSignFalseTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 954,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddistributionPointTest3EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1071,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsURI1CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 955,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidPolicyMappingTest12EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1339,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/onlyContainsCACertsCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 911,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidMappingToanyPolicyTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BadnotBeforeDateCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 910,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddeltaCRLTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1093,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/UserNoticeQualifierTest19EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1263,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 986,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitPolicyMapping5subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 947,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/PanyPolicyMapping1to2CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 965,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/nameConstraintsDN4CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1093,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedinhibitAnyPolicyTest10EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 919,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvaliddeltaCRLTest6EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1093,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest12EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 991,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidinhibitPolicyMappingTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 941,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BadSignedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 902,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint1subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 922,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidinhibitPolicyMappingTest5EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 942,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/requireExplicitPolicy0CACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 933,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/CPSPointerQualifierTest20EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1011,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValiddeltaCRLTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1091,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidBasicSelfIssuedNewWithOldTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 945,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/pathLenConstraint6subCA1Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 926,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/indirectCRLCA4Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 904,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/BasicSelfIssuedCRLSigningKeyCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 925,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/inhibitAnyPolicy1subCA2Cert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 915,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidIDPwithindirectCRLTest25EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1016,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidonlySomeReasonsTest16EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 924,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/DSAParametersInheritedCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 546,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidSelfIssuedinhibitAnyPolicyTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 944,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidpathLenConstraintTest13EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 938,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidDNnameConstraintsTest8EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 957,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/P12Mapping1to3subCACert.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1000,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/ValidDNnameConstraintsTest4EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 1016,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.4/arm64/src/crypto/x509/testdata/nist-pkits/certs/InvalidPolicyMappingTest2EE.crt",
+        "permissions_octal": "0o644",
+        "size_bytes": 918,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
         "path": "/Users/runner/hostedtoolcache/go/1.25.11/arm64/src/crypto/x509/test-file.crt",
         "permissions_octal": "0o644",
         "size_bytes": 1944,
@@ -6753,20 +9782,6 @@
         "size_bytes": 918,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/go/1.23.12/arm64/src/crypto/x509/test-file.crt",
-        "permissions_octal": "0o644",
-        "size_bytes": 1944,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/go/1.23.12/arm64/src/crypto/x509/testdata/test-dir.crt",
-        "permissions_octal": "0o644",
-        "size_bytes": 1939,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
       }
     ],
     "open_ports": [],
@@ -6793,7 +9808,7 @@
       }
     ],
     "env_files_exposed": [],
-    "critical_count": 917,
+    "critical_count": 1349,
     "thresholds": {
       "sip": "red",
       "filevault": "red",
