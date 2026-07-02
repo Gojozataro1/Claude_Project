@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-07-01T11:23:38.607581+00:00",
-  "hostname": "iad20-eo1208-ffbdd0b1-1be3-4283-8bd1-19915d9967ad-262DA01A7E09.local",
+  "scan_timestamp": "2026-07-02T10:41:02.730500+00:00",
+  "hostname": "iad20-eo1211-c39d824a-06ad-403f-9e75-8347c2ac3a8d-82126BAD6D0A.local",
   "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 48.77,
+        "free_gb": 48.68,
         "percent": 18.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 48.77,
+        "free_gb": 48.68,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.31,
-        "free_gb": 48.77,
-        "percent": 13.0
+        "free_gb": 48.68,
+        "percent": 13.1
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 48.77,
+        "free_gb": 48.68,
         "percent": 0.1
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 274.53,
-        "free_gb": 48.77,
+        "used_gb": 274.62,
+        "free_gb": 48.68,
         "percent": 84.9
       },
       {
@@ -100,7 +100,7 @@
       },
       {
         "name": "GeoServices",
-        "size_mb": 41.5
+        "size_mb": 41.6
       },
       {
         "name": "Homebrew",
