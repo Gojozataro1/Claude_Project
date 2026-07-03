@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-07-02T10:41:02.730500+00:00",
-  "hostname": "iad20-eo1211-c39d824a-06ad-403f-9e75-8347c2ac3a8d-82126BAD6D0A.local",
+  "scan_timestamp": "2026-07-03T10:36:25.533868+00:00",
+  "hostname": "sat12-dp152-c1e9138f-9976-4470-942e-607cab1203fa-A6A9C5F381C5.local",
   "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 11.27,
-        "free_gb": 48.68,
-        "percent": 18.8
+        "free_gb": 46.59,
+        "percent": 19.5
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 48.68,
+        "free_gb": 46.59,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.31,
-        "free_gb": 48.68,
-        "percent": 13.1
+        "free_gb": 46.59,
+        "percent": 13.6
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 48.68,
+        "free_gb": 46.59,
         "percent": 0.1
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 274.62,
-        "free_gb": 48.68,
-        "percent": 84.9
+        "used_gb": 276.71,
+        "free_gb": 46.59,
+        "percent": 85.6
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
@@ -104,7 +104,7 @@
       },
       {
         "name": "Homebrew",
-        "size_mb": 39.0
+        "size_mb": 39.1
       },
       {
         "name": "com.apple.helpd",
@@ -148,196 +148,196 @@
         "status": "sleeping"
       },
       {
-        "pid": 82,
+        "pid": 80,
         "name": "logd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 83,
+        "pid": 81,
         "name": "smd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 84,
+        "pid": 82,
         "name": "UserEventAgent",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 85,
+        "pid": 83,
         "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 86,
+        "pid": 84,
         "name": "fseventsd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 87,
+        "pid": 85,
         "name": "mediaremoted",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 89,
+        "pid": 87,
         "name": "systemstats",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 91,
+        "pid": 89,
         "name": "accessoryupdater",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 92,
+        "pid": 90,
         "name": "configd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 93,
+        "pid": 91,
         "name": "endpointsecurity",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 94,
+        "pid": 92,
         "name": "powerd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 95,
+        "pid": 93,
         "name": "IOMFB_bics_daemo",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 97,
+        "pid": 95,
         "name": "amfid",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 99,
+        "pid": 97,
         "name": "remoted",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 101,
+        "pid": 99,
         "name": "keybagd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 102,
+        "pid": 100,
         "name": "softwareupdated",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 103,
+        "pid": 101,
         "name": "corespeechd_syst",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 109,
+        "pid": 107,
         "name": "mds",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 110,
+        "pid": 108,
         "name": "iconservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 111,
+        "pid": 109,
         "name": "kernelmanagerd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 112,
+        "pid": 110,
         "name": "diskarbitrationd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 115,
+        "pid": 113,
         "name": "coreduetd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 116,
+        "pid": 114,
         "name": "syslogd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 119,
+        "pid": 117,
         "name": "thermalmonitord",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 120,
+        "pid": 118,
         "name": "opendirectoryd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 122,
+        "pid": 120,
         "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 123,
+        "pid": 121,
         "name": "timed",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 124,
+        "pid": 122,
         "name": "usbmuxd",
         "cpu_percent": 0,
         "memory_percent": 0,
