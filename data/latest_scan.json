@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-07-07T10:56:52.453773+00:00",
-  "hostname": "iad20-eo1205-d775baf4-487e-4d53-8769-aed7b9d3423e-02B6E5A8BD7F.local",
+  "scan_timestamp": "2026-07-08T10:19:04.833938+00:00",
+  "hostname": "sjc22-bm209-33d838be-f011-4398-83f7-1b9d55dd845d-9E7489FF080A.local",
   "macos_version": "26.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.56,
-        "free_gb": 104.2,
-        "percent": 10.8
+        "free_gb": 104.37,
+        "percent": 10.7
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.2,
+        "free_gb": 104.37,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.19,
-        "free_gb": 104.2,
-        "percent": 6.5
+        "free_gb": 104.37,
+        "percent": 6.4
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.2,
+        "free_gb": 104.37,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 217.73,
-        "free_gb": 104.2,
+        "used_gb": 217.56,
+        "free_gb": 104.37,
         "percent": 67.6
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.43,
+    "cache_size_gb": 0.44,
     "cache_top_dirs": [
       {
         "name": "bazel",
@@ -116,8 +116,8 @@
         "size_mb": 39.1
       },
       {
-        "name": "com.apple.parsecd",
-        "size_mb": 17.1
+        "name": "com.apple.helpd",
+        "size_mb": 32.3
       }
     ],
     "trash_size_mb": 0.0,
@@ -173,6 +173,13 @@
       {
         "pid": 88,
         "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 89,
+        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -341,13 +348,6 @@
       {
         "pid": 126,
         "name": "opendirectoryd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 127,
-        "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
