@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-07-10T10:54:43.812214+00:00",
-  "hostname": "sat12-bq160-0a3326ad-cffa-44fe-b23a-8fc973df45f6-92D2A6CE2819.local",
-  "macos_version": "26.4",
+  "scan_timestamp": "2026-07-11T09:37:44.561159+00:00",
+  "hostname": "sjc22-bt143-2ce7fed1-7bec-44a3-a5e6-c7dc2d6e09e7-E6DE213EDDC3.local",
+  "macos_version": "15.7.7",
   "cpu_memory": {},
   "disk_storage": {
     "partitions": [
@@ -10,9 +10,9 @@
         "device": "/dev/disk3s1s1",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 12.56,
-        "free_gb": 104.27,
-        "percent": 10.7
+        "used_gb": 11.27,
+        "free_gb": 48.0,
+        "percent": 19.0
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.27,
+        "free_gb": 48.0,
         "percent": 0.0
       },
       {
@@ -28,18 +28,18 @@
         "device": "/dev/disk3s2",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 7.19,
-        "free_gb": 104.27,
-        "percent": 6.5
+        "used_gb": 7.31,
+        "free_gb": 48.0,
+        "percent": 13.2
       },
       {
         "mountpoint": "/System/Volumes/Update",
         "device": "/dev/disk3s4",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 0.0,
-        "free_gb": 104.27,
-        "percent": 0.0
+        "used_gb": 0.04,
+        "free_gb": 48.0,
+        "percent": 0.1
       },
       {
         "mountpoint": "/System/Volumes/xarts",
@@ -66,50 +66,68 @@
         "total_gb": 0.52,
         "used_gb": 0.0,
         "free_gb": 0.52,
-        "percent": 0.1
+        "percent": 0.0
       },
       {
         "mountpoint": "/System/Volumes/Data",
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 217.66,
-        "free_gb": 104.27,
-        "percent": 67.6
+        "used_gb": 275.3,
+        "free_gb": 48.0,
+        "percent": 85.2
       },
       {
-        "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
+        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex",
         "device": "/dev/disk5s1",
         "fstype": "apfs",
-        "total_gb": 0.55,
-        "used_gb": 0.52,
-        "free_gb": 0.02,
-        "percent": 95.9
+        "total_gb": 0.0,
+        "used_gb": 0.0,
+        "free_gb": 0.0,
+        "percent": 18.3
       },
       {
-        "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
+        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex 1",
         "device": "/dev/disk7s1",
         "fstype": "apfs",
         "total_gb": 0.0,
         "used_gb": 0.0,
         "free_gb": 0.0,
-        "percent": 18.0
+        "percent": 18.3
+      },
+      {
+        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex 2",
+        "device": "/dev/disk9s1",
+        "fstype": "apfs",
+        "total_gb": 0.0,
+        "used_gb": 0.0,
+        "free_gb": 0.0,
+        "percent": 18.3
+      },
+      {
+        "mountpoint": "/Volumes/Creedence11M6270.SECUREPKITRUSTSTOREASSETS_SECUREPKITRUSTSTORE_Cryptex 3",
+        "device": "/dev/disk11s1",
+        "fstype": "apfs",
+        "total_gb": 0.0,
+        "used_gb": 0.0,
+        "free_gb": 0.0,
+        "percent": 18.3
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.44,
+    "cache_size_gb": 0.41,
     "cache_top_dirs": [
       {
         "name": "bazel",
         "size_mb": 184.1
       },
       {
-        "name": "GeoServices",
-        "size_mb": 60.7
-      },
-      {
         "name": "bazelisk",
         "size_mb": 60.4
+      },
+      {
+        "name": "GeoServices",
+        "size_mb": 41.6
       },
       {
         "name": "Homebrew",
@@ -117,7 +135,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 32.3
+        "size_mb": 31.8
       }
     ],
     "trash_size_mb": 0.0,
@@ -157,197 +175,197 @@
         "status": "sleeping"
       },
       {
-        "pid": 86,
+        "pid": 80,
         "name": "logd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 87,
+        "pid": 81,
         "name": "smd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 88,
+        "pid": 82,
         "name": "UserEventAgent",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 90,
+        "pid": 84,
         "name": "fseventsd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 91,
+        "pid": 85,
         "name": "mediaremoted",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 93,
+        "pid": 87,
         "name": "systemstats",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 95,
+        "pid": 89,
         "name": "accessoryupdater",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 96,
-        "name": "uarpassetmanager",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 97,
+        "pid": 90,
         "name": "configd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 98,
+        "pid": 91,
         "name": "endpointsecurity",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 99,
+        "pid": 92,
         "name": "powerd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 100,
+        "pid": 93,
         "name": "IOMFB_bics_daemo",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 102,
+        "pid": 95,
         "name": "amfid",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 104,
+        "pid": 97,
         "name": "remoted",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 106,
+        "pid": 99,
         "name": "keybagd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 107,
+        "pid": 100,
         "name": "softwareupdated",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 108,
+        "pid": 101,
         "name": "corespeechd_syst",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 114,
+        "pid": 107,
         "name": "mds",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 115,
+        "pid": 108,
         "name": "iconservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 116,
+        "pid": 109,
         "name": "kernelmanagerd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 117,
+        "pid": 110,
         "name": "diskarbitrationd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 120,
+        "pid": 113,
         "name": "coreduetd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 121,
+        "pid": 114,
         "name": "syslogd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 123,
+        "pid": 117,
         "name": "thermalmonitord",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 124,
-        "name": "contextstored",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 125,
-        "name": "xprotectd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 126,
+        "pid": 118,
         "name": "opendirectoryd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
       },
       {
-        "pid": 127,
+        "pid": 120,
         "name": "launchservicesd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 121,
+        "name": "timed",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 122,
+        "name": "usbmuxd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 123,
+        "name": "securityd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -1071,21 +1089,21 @@
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.9/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 1261,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.9/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.5/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.5/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.10/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1261,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.10/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
