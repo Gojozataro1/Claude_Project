@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-07-18T09:25:55.115371+00:00",
-  "hostname": "iad20-fj923-b3e9aba3-e4b5-4668-a854-818ed99d291a-4E0714F7A8BF.local",
+  "scan_timestamp": "2026-07-19T09:51:55.399483+00:00",
+  "hostname": "sat12-bq163-5f8d7e11-9067-4097-aeb9-ce6495f51377-9E68A833DD3E.local",
   "macos_version": "26.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.56,
-        "free_gb": 104.6,
+        "free_gb": 104.41,
         "percent": 10.7
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.6,
+        "free_gb": 104.41,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.19,
-        "free_gb": 104.6,
+        "free_gb": 104.41,
         "percent": 6.4
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.6,
+        "free_gb": 104.41,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 217.34,
-        "free_gb": 104.6,
-        "percent": 67.5
+        "used_gb": 217.53,
+        "free_gb": 104.41,
+        "percent": 67.6
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -113,7 +113,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 29.5
+        "size_mb": 32.3
       },
       {
         "name": "Homebrew",
@@ -173,6 +173,13 @@
       {
         "pid": 88,
         "name": "UserEventAgent",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 89,
+        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -341,13 +348,6 @@
       {
         "pid": 126,
         "name": "opendirectoryd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 127,
-        "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
