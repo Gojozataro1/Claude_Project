@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-07-25T09:47:45.012980+00:00",
-  "hostname": "sjc20-cw714-6d196ca1-2c80-43a0-8d04-e0de9d19219e-06C5137C40B7.local",
+  "scan_timestamp": "2026-07-26T10:00:11.600604+00:00",
+  "hostname": "sjc22-bt150-b0bd568e-989a-45b5-81d0-ca01e4892f9d-5285804BE221.local",
   "macos_version": "26.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.56,
-        "free_gb": 103.81,
+        "free_gb": 103.48,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.81,
+        "free_gb": 103.48,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.19,
-        "free_gb": 103.81,
+        "free_gb": 103.48,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.81,
+        "free_gb": 103.48,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.13,
-        "free_gb": 103.81,
-        "percent": 67.8
+        "used_gb": 218.46,
+        "free_gb": 103.48,
+        "percent": 67.9
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -117,7 +117,7 @@
       },
       {
         "name": "Homebrew",
-        "size_mb": 26.8
+        "size_mb": 26.9
       }
     ],
     "trash_size_mb": 0.0,
@@ -194,6 +194,13 @@
       {
         "pid": 91,
         "name": "mediaremoted",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 92,
+        "name": "XProtect",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -341,13 +348,6 @@
       {
         "pid": 124,
         "name": "contextstored",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 125,
-        "name": "xprotectd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -1057,21 +1057,21 @@
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.11/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 1261,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.11/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.6/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.6/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.12/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1261,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.12/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
