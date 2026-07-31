@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-07-30T10:24:46.844387+00:00",
-  "hostname": "sjc22-be107-690232d7-3232-4686-a729-4d228b960d66-9A89986896AB.local",
+  "scan_timestamp": "2026-07-31T10:39:19.307101+00:00",
+  "hostname": "sat12-bq164-971fe919-7c18-4fd1-a9ca-644e752c6e96-E2CE9D785BCF.local",
   "macos_version": "26.4",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.56,
-        "free_gb": 103.34,
+        "free_gb": 103.48,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.34,
+        "free_gb": 103.48,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.19,
-        "free_gb": 103.34,
+        "free_gb": 103.48,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.34,
+        "free_gb": 103.48,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.59,
-        "free_gb": 103.34,
+        "used_gb": 218.46,
+        "free_gb": 103.48,
         "percent": 67.9
       },
       {
@@ -283,6 +283,13 @@
         "status": "sleeping"
       },
       {
+        "pid": 113,
+        "name": "warmd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
         "pid": 114,
         "name": "mds",
         "cpu_percent": 0,
@@ -341,13 +348,6 @@
       {
         "pid": 125,
         "name": "xprotectd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 126,
-        "name": "opendirectoryd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
