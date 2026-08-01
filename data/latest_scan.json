@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-07-31T10:39:19.307101+00:00",
-  "hostname": "sat12-bq164-971fe919-7c18-4fd1-a9ca-644e752c6e96-E2CE9D785BCF.local",
-  "macos_version": "26.4",
+  "scan_timestamp": "2026-08-01T09:59:50.484863+00:00",
+  "hostname": "iad20-eo1207-0840a05e-ba2e-40c8-9e2c-d27931848a9c-4EE3ABECFFDF.local",
+  "macos_version": "26.5.2",
   "cpu_memory": {},
   "disk_storage": {
     "partitions": [
@@ -10,8 +10,8 @@
         "device": "/dev/disk3s1s1",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 12.56,
-        "free_gb": 103.48,
+        "used_gb": 12.57,
+        "free_gb": 103.83,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.48,
+        "free_gb": 103.83,
         "percent": 0.0
       },
       {
@@ -28,8 +28,8 @@
         "device": "/dev/disk3s2",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 7.19,
-        "free_gb": 103.48,
+        "used_gb": 7.23,
+        "free_gb": 103.83,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.48,
+        "free_gb": 103.83,
         "percent": 0.0
       },
       {
@@ -66,16 +66,16 @@
         "total_gb": 0.52,
         "used_gb": 0.0,
         "free_gb": 0.52,
-        "percent": 0.1
+        "percent": 0.0
       },
       {
         "mountpoint": "/System/Volumes/Data",
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.46,
-        "free_gb": 103.48,
-        "percent": 67.9
+        "used_gb": 218.03,
+        "free_gb": 103.83,
+        "percent": 67.7
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -97,7 +97,7 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.42,
+    "cache_size_gb": 0.43,
     "cache_top_dirs": [
       {
         "name": "bazel",
@@ -112,12 +112,12 @@
         "size_mb": 60.5
       },
       {
-        "name": "com.apple.helpd",
-        "size_mb": 32.3
+        "name": "Homebrew",
+        "size_mb": 39.5
       },
       {
-        "name": "Homebrew",
-        "size_mb": 26.9
+        "name": "com.apple.helpd",
+        "size_mb": 29.5
       }
     ],
     "trash_size_mb": 0.0,
@@ -173,13 +173,6 @@
       {
         "pid": 88,
         "name": "UserEventAgent",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 89,
-        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -283,13 +276,6 @@
         "status": "sleeping"
       },
       {
-        "pid": 113,
-        "name": "warmd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
         "pid": 114,
         "name": "mds",
         "cpu_percent": 0,
@@ -348,6 +334,20 @@
       {
         "pid": 125,
         "name": "xprotectd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 126,
+        "name": "opendirectoryd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 127,
+        "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
