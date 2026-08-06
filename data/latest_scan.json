@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-08-05T10:35:05.643704+00:00",
-  "hostname": "sat12-bq166-09f47083-3c5a-4656-8af3-08d81410a4ff-F2B2B70F4B7D.local",
+  "scan_timestamp": "2026-08-06T10:39:10.624494+00:00",
+  "hostname": "sat12-bq165-08cb8e06-a765-4b99-8ed4-50cf925d6ef3-C6FA2E8F2A69.local",
   "macos_version": "26.5.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.57,
-        "free_gb": 104.01,
+        "free_gb": 104.16,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.01,
+        "free_gb": 104.16,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.23,
-        "free_gb": 104.01,
+        "free_gb": 104.16,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.01,
+        "free_gb": 104.16,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 217.85,
-        "free_gb": 104.01,
-        "percent": 67.7
+        "used_gb": 217.7,
+        "free_gb": 104.16,
+        "percent": 67.6
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -105,7 +105,7 @@
       },
       {
         "name": "GeoServices",
-        "size_mb": 60.7
+        "size_mb": 60.9
       },
       {
         "name": "bazelisk",
@@ -283,6 +283,13 @@
         "status": "sleeping"
       },
       {
+        "pid": 113,
+        "name": "warmd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
         "pid": 114,
         "name": "mds",
         "cpu_percent": 0,
@@ -341,13 +348,6 @@
       {
         "pid": 125,
         "name": "xprotectd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 126,
-        "name": "opendirectoryd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
