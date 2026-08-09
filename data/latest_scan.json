@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-08-08T08:40:52.751857+00:00",
-  "hostname": "sat12-dp154-1ce9bb43-3113-4588-bd37-7a669fe971dc-0264487D1F1B.local",
+  "scan_timestamp": "2026-08-09T08:42:43.259713+00:00",
+  "hostname": "sjc22-bt151-c4a39f40-1001-414c-baee-3cac8c811d97-8AF80FBDC803.local",
   "macos_version": "26.5.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.57,
-        "free_gb": 103.8,
+        "free_gb": 103.84,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.8,
+        "free_gb": 103.84,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.23,
-        "free_gb": 103.8,
+        "free_gb": 103.84,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.8,
+        "free_gb": 103.84,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.06,
-        "free_gb": 103.8,
+        "used_gb": 218.03,
+        "free_gb": 103.84,
         "percent": 67.7
       },
       {
@@ -117,7 +117,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 32.3
+        "size_mb": 29.5
       }
     ],
     "trash_size_mb": 0.0,
@@ -173,13 +173,6 @@
       {
         "pid": 88,
         "name": "UserEventAgent",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 89,
-        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -348,6 +341,13 @@
       {
         "pid": 126,
         "name": "opendirectoryd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 127,
+        "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
