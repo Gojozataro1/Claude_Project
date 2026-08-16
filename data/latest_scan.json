@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-08-14T09:06:53.242094+00:00",
-  "hostname": "sjc20-bb714-4860e31d-8bc2-4b0c-8d8a-44b4db17553d-8EBBC6C36F83.local",
+  "scan_timestamp": "2026-08-16T08:29:20.126165+00:00",
+  "hostname": "iad20-fj917-9878376f-0197-4016-bd6f-ad17c34a557e-26332EF947D0.local",
   "macos_version": "26.5.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.57,
-        "free_gb": 103.16,
-        "percent": 10.9
+        "free_gb": 103.82,
+        "percent": 10.8
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.16,
+        "free_gb": 103.82,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.23,
-        "free_gb": 103.16,
-        "percent": 6.6
+        "free_gb": 103.82,
+        "percent": 6.5
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.16,
+        "free_gb": 103.82,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.71,
-        "free_gb": 103.16,
-        "percent": 68.0
+        "used_gb": 218.05,
+        "free_gb": 103.82,
+        "percent": 67.7
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -117,7 +117,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 32.3
+        "size_mb": 29.6
       }
     ],
     "trash_size_mb": 0.0,
@@ -173,13 +173,6 @@
       {
         "pid": 88,
         "name": "UserEventAgent",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 89,
-        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -348,6 +341,13 @@
       {
         "pid": 126,
         "name": "opendirectoryd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 127,
+        "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
