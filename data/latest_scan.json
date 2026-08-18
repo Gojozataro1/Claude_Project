@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-08-17T08:42:51.154100+00:00",
-  "hostname": "sat12-bq146-564afa85-a091-4f59-abf7-7b39adc91d6a-967CDDF079D4.local",
+  "scan_timestamp": "2026-08-18T08:36:45.083342+00:00",
+  "hostname": "iad20-eo1208-7f55ea23-5c9f-4756-a323-753a76eaabd7-B6B26B30C045.local",
   "macos_version": "26.5.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.57,
-        "free_gb": 104.17,
+        "free_gb": 104.16,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.17,
+        "free_gb": 104.16,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.23,
-        "free_gb": 104.17,
+        "free_gb": 104.16,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.17,
+        "free_gb": 104.16,
         "percent": 0.0
       },
       {
@@ -74,7 +74,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 217.7,
-        "free_gb": 104.17,
+        "free_gb": 104.16,
         "percent": 67.6
       },
       {
@@ -194,6 +194,13 @@
       {
         "pid": 91,
         "name": "mediaremoted",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 92,
+        "name": "XProtect",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -341,13 +348,6 @@
       {
         "pid": 124,
         "name": "contextstored",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 125,
-        "name": "xprotectd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
