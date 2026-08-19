@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-08-18T08:36:45.083342+00:00",
-  "hostname": "iad20-eo1208-7f55ea23-5c9f-4756-a323-753a76eaabd7-B6B26B30C045.local",
+  "scan_timestamp": "2026-08-19T08:36:53.067155+00:00",
+  "hostname": "sat12-bq161-7c15c0be-a7dc-4951-bb8e-53cf65d5763b-6EAA7A84CEC2.local",
   "macos_version": "26.5.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.57,
-        "free_gb": 104.16,
+        "free_gb": 103.82,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.16,
+        "free_gb": 103.82,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.23,
-        "free_gb": 104.16,
+        "free_gb": 103.82,
         "percent": 6.5
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.16,
+        "free_gb": 103.82,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk3s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 217.7,
-        "free_gb": 104.16,
-        "percent": 67.6
+        "used_gb": 218.05,
+        "free_gb": 103.82,
+        "percent": 67.7
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -117,7 +117,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 32.3
+        "size_mb": 29.6
       }
     ],
     "trash_size_mb": 0.0,
@@ -178,13 +178,6 @@
         "status": "sleeping"
       },
       {
-        "pid": 89,
-        "name": "wifiFirmwareLoad",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
         "pid": 90,
         "name": "fseventsd",
         "cpu_percent": 0,
@@ -194,13 +187,6 @@
       {
         "pid": 91,
         "name": "mediaremoted",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 92,
-        "name": "XProtect",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -290,13 +276,6 @@
         "status": "sleeping"
       },
       {
-        "pid": 113,
-        "name": "warmd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
         "pid": 114,
         "name": "mds",
         "cpu_percent": 0,
@@ -348,6 +327,27 @@
       {
         "pid": 124,
         "name": "contextstored",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 125,
+        "name": "xprotectd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 126,
+        "name": "opendirectoryd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 127,
+        "name": "launchservicesd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
