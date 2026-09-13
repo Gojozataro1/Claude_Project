@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-09-12T11:59:39.766515+00:00",
-  "hostname": "iad20-gt1017-5c039f00-894a-4c3e-bba5-c9a6e1839d99-D28F30755333.local",
+  "scan_timestamp": "2026-09-13T13:08:46.706948+00:00",
+  "hostname": "sat12-bq159-1b6c71fc-bf03-4fcb-8570-036189c1d4cb-86E9D4675B55.local",
   "macos_version": "26.6.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -73,7 +73,7 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 219.27,
+        "used_gb": 219.26,
         "free_gb": 102.53,
         "percent": 68.1
       },
