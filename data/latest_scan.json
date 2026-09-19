@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-09-18T12:45:46.222095+00:00",
-  "hostname": "sjc22-bt146-f8ce8652-35da-45e9-8424-a561f7a6f263-5A561878EF4E.local",
+  "scan_timestamp": "2026-09-19T12:18:51.064654+00:00",
+  "hostname": "sat12-bq150-4c678df0-d98c-498e-81fa-1815c2811865-4E62DD4A7D82.local",
   "macos_version": "26.6.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 102.38,
+        "free_gb": 102.49,
         "percent": 11.0
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.38,
+        "free_gb": 102.49,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.24,
-        "free_gb": 102.38,
+        "free_gb": 102.49,
         "percent": 6.6
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.38,
+        "free_gb": 102.49,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 219.41,
-        "free_gb": 102.38,
-        "percent": 68.2
+        "used_gb": 219.3,
+        "free_gb": 102.49,
+        "percent": 68.1
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -117,7 +117,7 @@
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 32.3
+        "size_mb": 23.2
       }
     ],
     "trash_size_mb": 0.0,
@@ -173,13 +173,6 @@
       {
         "pid": 88,
         "name": "UserEventAgent",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 89,
-        "name": "wifiFirmwareLoad",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -351,6 +344,13 @@
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
+      },
+      {
+        "pid": 127,
+        "name": "launchservicesd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
       }
     ],
     "total_background_count": 30,
@@ -363,6 +363,888 @@
   },
   "security": {
     "world_readable_sensitive": [
+      {
+        "path": "/Users/runner/Library/Android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/darwin-x86_64/python3/lib/python3.11/site-packages/pip/_vendor/certifi/cacert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 275233,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/Library/Android/sdk/ndk/27.3.13750724/toolchains/llvm/prebuilt/darwin-x86_64/python3/lib/python3.11/site-packages/pip/_vendor/certifi/cacert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 275233,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/Library/Android/sdk/ndk/29.0.14206865/toolchains/llvm/prebuilt/darwin-x86_64/python3/lib/python3.11/site-packages/pip/_vendor/certifi/cacert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 275233,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/Library/Android/sdk/emulator/lib/ca-bundle.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 258424,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/platform_root_cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 749,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/platform_root_key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 639,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 603,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_oid5.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_oid4.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_oid1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_oid2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_root2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 570,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_require2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_require_no_policies.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 595,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 648,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_root.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 566,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 887,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_mapped.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 989,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 635,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_none.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 574,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_leaf_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 583,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_require_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 680,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 664,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_root_cross_inhibit_mapping.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 899,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/tls/testdata/example-cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 587,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.24.13/arm64/src/crypto/tls/testdata/example-key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/platform_root_cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 749,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/platform_root_key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 639,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 603,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_oid5.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_oid4.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_oid1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_oid2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_root2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 570,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_require2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_require_no_policies.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 595,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 648,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_root.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 566,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 887,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_mapped.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 989,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 635,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_none.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 574,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_leaf_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 583,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_require_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 680,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 664,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_root_cross_inhibit_mapping.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 899,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/tls/testdata/example-cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 587,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.25.14/arm64/src/crypto/tls/testdata/example-key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/platform_root_cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 749,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/platform_root_key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 639,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 603,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_oid5.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_oid4.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_oid1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_oid2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_root2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 570,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_require.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 656,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_require1.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_require2.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 660,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_require_no_policies.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 595,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 648,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_root.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 566,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 887,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_mapped.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 989,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 635,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_none.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 574,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_any.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 599,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_leaf_invalid.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 583,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_require_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 680,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_duplicate.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 664,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_root_cross_inhibit_mapping.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 611,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/x509/testdata/policy_intermediate_mapped_oid3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 899,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/tls/testdata/example-cert.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 587,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/go/1.26.8/arm64/src/crypto/tls/testdata/example-key.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 227,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.2.11/arm64/lib/ruby/3.2.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1261,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.2.11/arm64/lib/ruby/3.2.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1229,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.6/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1229,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.12/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1261,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.12/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1229,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.10/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1261,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.10/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1229,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.101/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 549750,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.101/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 515018,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.303/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 556746,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.303/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 517928,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.302/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 552370,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.302/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.317/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 552370,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.317/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.102/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 550291,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.102/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.204/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 556746,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.204/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 517928,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.400/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 552370,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.400/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.203/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 552370,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.203/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.203/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 550291,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.203/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.424/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 561712,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.424/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 520744,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.103/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 552370,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/10.0.103/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 512074,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
       {
         "path": "/Users/runner/Library/Android/sdk/cmake/4.1.2/share/cmake-4.1/Templates/Windows/Windows_TemporaryKey.pfx",
         "permissions_octal": "0o644",
@@ -8949,7 +9831,7 @@
       }
     ],
     "env_files_exposed": [],
-    "critical_count": 1225,
+    "critical_count": 1351,
     "thresholds": {
       "sip": "red",
       "filevault": "red",
