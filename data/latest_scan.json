@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-09-24T13:18:07.259553+00:00",
-  "hostname": "sjc22-bt146-d84dd93f-e87b-4ed5-9a10-983c27e02c8f-E6D07B605EEC.local",
+  "scan_timestamp": "2026-09-25T13:18:08.541442+00:00",
+  "hostname": "iad20-gt1025-75b10378-12b3-4f4c-a272-3e4efeeba3ea-E6B1C9FFFDE1.local",
   "macos_version": "26.6.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 102.5,
+        "free_gb": 102.52,
         "percent": 11.0
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.5,
+        "free_gb": 102.52,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.24,
-        "free_gb": 102.5,
+        "free_gb": 102.52,
         "percent": 6.6
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.5,
+        "free_gb": 102.52,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 219.29,
-        "free_gb": 102.5,
+        "used_gb": 219.27,
+        "free_gb": 102.52,
         "percent": 68.1
       },
       {
@@ -194,6 +194,13 @@
       {
         "pid": 91,
         "name": "mediaremoted",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 92,
+        "name": "XProtect",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -341,13 +348,6 @@
       {
         "pid": 124,
         "name": "contextstored",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 125,
-        "name": "xprotectd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
