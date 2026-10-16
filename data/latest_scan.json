@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-10-15T13:07:21.056688+00:00",
-  "hostname": "sat12-bq151-c5b567cc-3190-4cb7-bded-2d481f472145-D6BC1ED6EB82.local",
+  "scan_timestamp": "2026-10-16T13:02:38.495955+00:00",
+  "hostname": "sjc22-bt147-c7de2e77-f6ab-4b25-b3bd-406740236b72-96E1F6766DE4.local",
   "macos_version": "26.6.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 101.9,
+        "free_gb": 101.91,
         "percent": 11.0
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 101.9,
+        "free_gb": 101.91,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.24,
-        "free_gb": 101.9,
+        "free_gb": 101.91,
         "percent": 6.6
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 101.9,
+        "free_gb": 101.91,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 219.9,
-        "free_gb": 101.9,
+        "used_gb": 219.88,
+        "free_gb": 101.91,
         "percent": 68.3
       },
       {
@@ -194,13 +194,6 @@
       {
         "pid": 91,
         "name": "mediaremoted",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 92,
-        "name": "XProtect",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -348,6 +341,13 @@
       {
         "pid": 124,
         "name": "contextstored",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 125,
+        "name": "xprotectd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
