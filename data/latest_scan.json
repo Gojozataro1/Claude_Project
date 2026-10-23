@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-10-22T13:31:43.544320+00:00",
-  "hostname": "sat12-bq160-12fc30c8-49c4-49f4-9e72-bc47778fc6ab-86134532CA35.local",
+  "scan_timestamp": "2026-10-23T13:07:45.008833+00:00",
+  "hostname": "sjc22-be104-b525f67b-8bf0-4482-9670-88f5164b3689-5ECC57A6F932.local",
   "macos_version": "26.6.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 103.22,
+        "free_gb": 103.1,
         "percent": 10.9
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.22,
+        "free_gb": 103.1,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.24,
-        "free_gb": 103.22,
+        "free_gb": 103.1,
         "percent": 6.6
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 103.22,
+        "free_gb": 103.1,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.58,
-        "free_gb": 103.22,
-        "percent": 67.9
+        "used_gb": 218.7,
+        "free_gb": 103.1,
+        "percent": 68.0
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -199,13 +199,6 @@
         "status": "sleeping"
       },
       {
-        "pid": 92,
-        "name": "XProtect",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
         "pid": 93,
         "name": "systemstats",
         "cpu_percent": 0,
@@ -290,13 +283,6 @@
         "status": "sleeping"
       },
       {
-        "pid": 113,
-        "name": "warmd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
         "pid": 114,
         "name": "mds",
         "cpu_percent": 0,
@@ -348,6 +334,20 @@
       {
         "pid": 124,
         "name": "contextstored",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 125,
+        "name": "xprotectd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 126,
+        "name": "opendirectoryd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
