@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-10-30T14:52:17.859817+00:00",
-  "hostname": "sjc20-bb711-ecf2b8c7-3470-40af-bf80-583314054d07-8218C6C90318.local",
+  "scan_timestamp": "2026-10-31T14:20:29.786724+00:00",
+  "hostname": "iad20-fj919-a0f9f9f7-082c-4bc6-9f69-4d4bc284f29b-42E52D711C86.local",
   "macos_version": "26.6.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 102.71,
+        "free_gb": 102.74,
         "percent": 11.0
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.71,
+        "free_gb": 102.74,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.24,
-        "free_gb": 102.71,
+        "free_gb": 102.74,
         "percent": 6.6
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.71,
+        "free_gb": 102.74,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 219.08,
-        "free_gb": 102.71,
+        "used_gb": 219.06,
+        "free_gb": 102.74,
         "percent": 68.1
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.39,
+    "cache_size_gb": 0.4,
     "cache_top_dirs": [
       {
         "name": "bazel",
@@ -113,11 +113,11 @@
       },
       {
         "name": "Homebrew",
-        "size_mb": 55.8
+        "size_mb": 56.0
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 38.5
+        "size_mb": 38.6
       }
     ],
     "trash_size_mb": 0.0,
@@ -1057,49 +1057,49 @@
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.7/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 1229,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.12/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.12/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1261,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.12/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.12/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.11/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.9/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 1229,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.13/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1261,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.11/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.13/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/.dotnet/sdk/10.0.402/trustedroots/timestampctl.pem",
+        "path": "/Users/runner/.dotnet/sdk/10.0.403/trustedroots/timestampctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 563922,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/.dotnet/sdk/10.0.402/trustedroots/codesignctl.pem",
+        "path": "/Users/runner/.dotnet/sdk/10.0.403/trustedroots/codesignctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 521718,
         "severity": "Critical",
@@ -1134,6 +1134,34 @@
         "reason": "World-readable sensitive file"
       },
       {
+        "path": "/Users/runner/.dotnet/sdk/8.0.427/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 573464,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/8.0.427/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 530552,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.320/trustedroots/timestampctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 563922,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
+        "path": "/Users/runner/.dotnet/sdk/9.0.320/trustedroots/codesignctl.pem",
+        "permissions_octal": "0o644",
+        "size_bytes": 521718,
+        "severity": "Critical",
+        "reason": "World-readable sensitive file"
+      },
+      {
         "path": "/Users/runner/.dotnet/sdk/10.0.302/trustedroots/timestampctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 552370,
@@ -1144,34 +1172,6 @@
         "path": "/Users/runner/.dotnet/sdk/10.0.302/trustedroots/codesignctl.pem",
         "permissions_octal": "0o644",
         "size_bytes": 512074,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/.dotnet/sdk/9.0.319/trustedroots/timestampctl.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 563922,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/.dotnet/sdk/9.0.319/trustedroots/codesignctl.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 521718,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/.dotnet/sdk/8.0.426/trustedroots/timestampctl.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 573464,
-        "severity": "Critical",
-        "reason": "World-readable sensitive file"
-      },
-      {
-        "path": "/Users/runner/.dotnet/sdk/8.0.426/trustedroots/codesignctl.pem",
-        "permissions_octal": "0o644",
-        "size_bytes": 530552,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
