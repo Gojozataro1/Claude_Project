@@ -1,7 +1,7 @@
 {
-  "scan_timestamp": "2026-11-03T15:58:05.870088+00:00",
-  "hostname": "sjc20-cw711-7ac0c9c9-59d5-4186-ae51-138b0be16e4e-D20D15B06017.local",
-  "macos_version": "26.6.2",
+  "scan_timestamp": "2026-11-05T16:12:29.963021+00:00",
+  "hostname": "iad20-eo1212-9e0e49a2-aef7-4749-8da6-4240567747b3-5A91CCEAF66B.local",
+  "macos_version": "26.7.2",
   "cpu_memory": {},
   "disk_storage": {
     "partitions": [
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 102.74,
-        "percent": 11.0
+        "free_gb": 104.6,
+        "percent": 10.8
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.74,
+        "free_gb": 104.6,
         "percent": 0.0
       },
       {
@@ -28,17 +28,17 @@
         "device": "/dev/disk2s2",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 7.24,
-        "free_gb": 102.74,
-        "percent": 6.6
+        "used_gb": 7.58,
+        "free_gb": 104.6,
+        "percent": 6.8
       },
       {
         "mountpoint": "/System/Volumes/Update",
         "device": "/dev/disk2s4",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 0.0,
-        "free_gb": 102.74,
+        "used_gb": 0.04,
+        "free_gb": 104.6,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 219.05,
-        "free_gb": 102.74,
-        "percent": 68.1
+        "used_gb": 216.8,
+        "free_gb": 104.6,
+        "percent": 67.5
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
@@ -87,17 +87,17 @@
         "percent": 95.9
       },
       {
-        "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/6dd55b0d06633a00de6f57ccb910a66a5ba2409a.asset/.AssetData",
+        "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_PKITrustStore/purpose_auto/d1b36c40ecf011c1a2dfeacc93215881ad4cf525.asset/.AssetData",
         "device": "/dev/disk6s1",
         "fstype": "apfs",
-        "total_gb": 0.0,
+        "total_gb": 0.01,
         "used_gb": 0.0,
         "free_gb": 0.0,
-        "percent": 18.0
+        "percent": 40.2
       }
     ],
     "large_files": [],
-    "cache_size_gb": 0.4,
+    "cache_size_gb": 0.39,
     "cache_top_dirs": [
       {
         "name": "bazel",
@@ -113,11 +113,11 @@
       },
       {
         "name": "Homebrew",
-        "size_mb": 56.0
+        "size_mb": 56.2
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 38.6
+        "size_mb": 39.0
       }
     ],
     "trash_size_mb": 0.0,
