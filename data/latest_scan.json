@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-11-05T16:12:29.963021+00:00",
-  "hostname": "iad20-eo1212-9e0e49a2-aef7-4749-8da6-4240567747b3-5A91CCEAF66B.local",
+  "scan_timestamp": "2026-11-06T15:42:46.839951+00:00",
+  "hostname": "sjc22-be105-d730e3ce-6fcd-418e-a31f-38f1f35abfd2-2239E7A25DAD.local",
   "macos_version": "26.7.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,7 +11,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 104.6,
+        "free_gb": 104.85,
         "percent": 10.8
       },
       {
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 104.6,
+        "free_gb": 104.85,
         "percent": 0.0
       },
       {
@@ -29,8 +29,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.58,
-        "free_gb": 104.6,
-        "percent": 6.8
+        "free_gb": 104.85,
+        "percent": 6.7
       },
       {
         "mountpoint": "/System/Volumes/Update",
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 104.6,
+        "free_gb": 104.85,
         "percent": 0.0
       },
       {
@@ -73,9 +73,9 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 216.8,
-        "free_gb": 104.6,
-        "percent": 67.5
+        "used_gb": 216.55,
+        "free_gb": 104.85,
+        "percent": 67.4
       },
       {
         "mountpoint": "/System/Library/AssetsV2/com_apple_MobileAsset_UAF_Siri_Understanding/purpose_auto/c10eb90af2d4996616c3cd0f6bac0833eb4925fa.asset/.AssetData",
