@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-11-18T16:58:27.586606+00:00",
-  "hostname": "sat12-dp155-099a62e0-2778-435d-830a-83cee8b2f292-4E232423A1F8.local",
+  "scan_timestamp": "2026-11-19T17:06:11.759822+00:00",
+  "hostname": "iad20-gt1017-de8fd4eb-2448-4bac-9e75-20e8de096ad1-763C93439444.local",
   "macos_version": "26.7.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -105,7 +105,7 @@
       },
       {
         "name": "GeoServices",
-        "size_mb": 61.0
+        "size_mb": 61.2
       },
       {
         "name": "bazelisk",
