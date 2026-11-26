@@ -1,6 +1,6 @@
 {
-  "scan_timestamp": "2026-11-25T18:27:51.752922+00:00",
-  "hostname": "sat12-dp152-00977609-7baf-4832-89d4-a66a78831f1a-726CAA907101.local",
+  "scan_timestamp": "2026-11-26T18:09:42.997979+00:00",
+  "hostname": "dsm41-ai256-ba1d58f5-1244-4d30-ada1-7c9a361cd47e-06EED8DB67FF.local",
   "macos_version": "26.7.2",
   "cpu_memory": {},
   "disk_storage": {
@@ -11,8 +11,8 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 12.64,
-        "free_gb": 102.81,
-        "percent": 11.0
+        "free_gb": 102.96,
+        "percent": 10.9
       },
       {
         "mountpoint": "/System/Volumes/VM",
@@ -20,7 +20,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.0,
-        "free_gb": 102.81,
+        "free_gb": 102.96,
         "percent": 0.0
       },
       {
@@ -29,7 +29,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 7.58,
-        "free_gb": 102.81,
+        "free_gb": 102.96,
         "percent": 6.9
       },
       {
@@ -38,7 +38,7 @@
         "fstype": "apfs",
         "total_gb": 343.07,
         "used_gb": 0.04,
-        "free_gb": 102.81,
+        "free_gb": 102.96,
         "percent": 0.0
       },
       {
@@ -73,8 +73,8 @@
         "device": "/dev/disk2s5",
         "fstype": "apfs",
         "total_gb": 343.07,
-        "used_gb": 218.6,
-        "free_gb": 102.81,
+        "used_gb": 218.44,
+        "free_gb": 102.96,
         "percent": 68.0
       },
       {
@@ -101,7 +101,7 @@
     "cache_top_dirs": [
       {
         "name": "bazel",
-        "size_mb": 184.8
+        "size_mb": 185.0
       },
       {
         "name": "GeoServices",
@@ -109,15 +109,15 @@
       },
       {
         "name": "bazelisk",
-        "size_mb": 60.4
+        "size_mb": 60.3
       },
       {
         "name": "Homebrew",
-        "size_mb": 56.8
+        "size_mb": 53.2
       },
       {
         "name": "com.apple.helpd",
-        "size_mb": 39.9
+        "size_mb": 40.0
       }
     ],
     "trash_size_mb": 0.0,
@@ -194,13 +194,6 @@
       {
         "pid": 91,
         "name": "mediaremoted",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
-        "pid": 92,
-        "name": "XProtect",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -290,13 +283,6 @@
         "status": "sleeping"
       },
       {
-        "pid": 113,
-        "name": "warmd",
-        "cpu_percent": 0,
-        "memory_percent": 0,
-        "status": "sleeping"
-      },
-      {
         "pid": 114,
         "name": "mds",
         "cpu_percent": 0,
@@ -348,6 +334,20 @@
       {
         "pid": 124,
         "name": "contextstored",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 125,
+        "name": "xprotectd",
+        "cpu_percent": 0,
+        "memory_percent": 0,
+        "status": "sleeping"
+      },
+      {
+        "pid": 126,
+        "name": "opendirectoryd",
         "cpu_percent": 0,
         "memory_percent": 0,
         "status": "sleeping"
@@ -1057,35 +1057,35 @@
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.12/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.13/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1261,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.12/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.4.13/arm64/lib/ruby/3.4.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.9/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/4.0.10/arm64/lib/ruby/4.0.0/rubygems/ssl_certs/rubygems.org/GlobalSign.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.13/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.14/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1261,
         "severity": "Critical",
         "reason": "World-readable sensitive file"
       },
       {
-        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.13/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
+        "path": "/Users/runner/hostedtoolcache/Ruby/3.3.14/arm64/lib/ruby/3.3.0/rubygems/ssl_certs/rubygems.org/GlobalSignRootCA_R3.pem",
         "permissions_octal": "0o644",
         "size_bytes": 1229,
         "severity": "Critical",
